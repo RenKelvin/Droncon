@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94F0FCBEFC57350E863119D0 /* libPods-Droncon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D91374BAD2CD5F29BD2846 /* libPods-Droncon.a */; };
 		A5EB66D41AF9CA4F002CB83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66D31AF9CA4F002CB83C /* AppDelegate.swift */; };
 		A5EB66D61AF9CA4F002CB83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66D51AF9CA4F002CB83C /* ViewController.swift */; };
 		A5EB66D91AF9CA4F002CB83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66D71AF9CA4F002CB83C /* Main.storyboard */; };
 		A5EB66DB1AF9CA4F002CB83C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */; };
-		A5EB66DE1AF9CA4F002CB83C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66DC1AF9CA4F002CB83C /* LaunchScreen.xib */; };
 		A5EB66EA1AF9CA50002CB83C /* DronconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66E91AF9CA50002CB83C /* DronconTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,16 +26,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droncon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Droncon/Pods-Droncon.debug.xcconfig"; sourceTree = "<group>"; };
 		A5EB66CE1AF9CA4F002CB83C /* Droncon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droncon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB66D21AF9CA4F002CB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB66D31AF9CA4F002CB83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5EB66D51AF9CA4F002CB83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5EB66D81AF9CA4F002CB83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A5EB66DD1AF9CA4F002CB83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A5EB66E31AF9CA50002CB83C /* DronconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DronconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB66E81AF9CA50002CB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB66E91AF9CA50002CB83C /* DronconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DronconTests.swift; sourceTree = "<group>"; };
+		E4F658EA91E6A88EA121E961 /* Pods-Droncon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droncon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Droncon/Pods-Droncon.release.xcconfig"; sourceTree = "<group>"; };
+		F7D91374BAD2CD5F29BD2846 /* libPods-Droncon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F0FCBEFC57350E863119D0 /* libPods-Droncon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E276CECC5FF5A5F3097CAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */,
+				E4F658EA91E6A88EA121E961 /* Pods-Droncon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E77C4577E2C249DB3A9F728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7D91374BAD2CD5F29BD2846 /* libPods-Droncon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5EB66C51AF9CA4F002CB83C = {
 			isa = PBXGroup;
 			children = (
 				A5EB66D01AF9CA4F002CB83C /* Droncon */,
 				A5EB66E61AF9CA50002CB83C /* DronconTests */,
 				A5EB66CF1AF9CA4F002CB83C /* Products */,
+				49E276CECC5FF5A5F3097CAA /* Pods */,
+				7E77C4577E2C249DB3A9F728 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +103,6 @@
 				A5EB66D51AF9CA4F002CB83C /* ViewController.swift */,
 				A5EB66D71AF9CA4F002CB83C /* Main.storyboard */,
 				A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */,
-				A5EB66DC1AF9CA4F002CB83C /* LaunchScreen.xib */,
 				A5EB66D11AF9CA4F002CB83C /* Supporting Files */,
 			);
 			path = Droncon;
@@ -119,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5EB66ED1AF9CA50002CB83C /* Build configuration list for PBXNativeTarget "Droncon" */;
 			buildPhases = (
+				61E80E0D5369BA44410B8875 /* Check Pods Manifest.lock */,
 				A5EB66CA1AF9CA4F002CB83C /* Sources */,
 				A5EB66CB1AF9CA4F002CB83C /* Frameworks */,
 				A5EB66CC1AF9CA4F002CB83C /* Resources */,
+				1F0EFB086F89BAB10C5A697F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EB66D91AF9CA4F002CB83C /* Main.storyboard in Resources */,
-				A5EB66DE1AF9CA4F002CB83C /* LaunchScreen.xib in Resources */,
 				A5EB66DB1AF9CA4F002CB83C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +228,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0EFB086F89BAB10C5A697F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Droncon/Pods-Droncon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61E80E0D5369BA44410B8875 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5EB66CA1AF9CA4F002CB83C /* Sources */ = {
@@ -242,14 +297,6 @@
 				A5EB66D81AF9CA4F002CB83C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A5EB66DC1AF9CA4F002CB83C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5EB66DD1AF9CA4F002CB83C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,8 +387,10 @@
 		};
 		A5EB66EE1AF9CA50002CB83C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Droncon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,8 +399,10 @@
 		};
 		A5EB66EF1AF9CA50002CB83C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F658EA91E6A88EA121E961 /* Pods-Droncon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Droncon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +462,7 @@
 				A5EB66EF1AF9CA50002CB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5EB66F01AF9CA50002CB83C /* Build configuration list for PBXNativeTarget "DronconTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +471,7 @@
 				A5EB66F21AF9CA50002CB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
