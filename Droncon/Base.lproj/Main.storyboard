@@ -40,7 +40,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-XF-OpG">
-                                <rect key="frame" x="258" y="142" width="84" height="36"/>
+                                <rect key="frame" x="258" y="258" width="84" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Light" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-GK-QqV">
                                         <rect key="frame" x="0.0" y="0.0" width="21" height="36"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-qf-aE8">
-                                <rect key="frame" x="204" y="226" width="192" height="86"/>
+                                <rect key="frame" x="204" y="318" width="192" height="86"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Cb-gqB">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
@@ -240,11 +240,17 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Switch_Frame" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-1x-9hU">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="32"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WId-8t-Bgx" firstAttribute="leading" secondItem="fny-BL-QtP" secondAttribute="trailing" id="92j-yG-Mfn"/>
                                     <constraint firstItem="69a-hB-V30" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="FaD-Jo-pXg"/>
                                     <constraint firstItem="SFC-uK-wbX" firstAttribute="leading" secondItem="WId-8t-Bgx" secondAttribute="trailing" id="KPx-nI-TYG"/>
+                                    <constraint firstItem="9rf-1x-9hU" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="LZT-fZ-jUo"/>
+                                    <constraint firstItem="9rf-1x-9hU" firstAttribute="leading" secondItem="y40-0C-LUE" secondAttribute="leading" id="RV7-W6-7dK"/>
+                                    <constraint firstAttribute="trailing" secondItem="9rf-1x-9hU" secondAttribute="trailing" id="Rra-xF-sLN"/>
                                     <constraint firstItem="69a-hB-V30" firstAttribute="leading" secondItem="y40-0C-LUE" secondAttribute="leading" id="Xbe-BN-Liv"/>
                                     <constraint firstItem="fny-BL-QtP" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="dgl-DT-qL3"/>
                                     <constraint firstItem="XW8-0j-0YH" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="e4j-b1-Th9"/>
@@ -254,11 +260,13 @@
                                     <constraint firstItem="WId-8t-Bgx" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="olB-pl-jh4"/>
                                     <constraint firstItem="fny-BL-QtP" firstAttribute="leading" secondItem="XW8-0j-0YH" secondAttribute="trailing" id="pn2-Qc-qoL"/>
                                     <constraint firstAttribute="width" constant="350" id="qi5-zR-rRb"/>
+                                    <constraint firstAttribute="bottom" secondItem="9rf-1x-9hU" secondAttribute="bottom" id="wFZ-dQ-lpR"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="2OY-tr-JFF"/>
+                            <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" constant="24" id="46s-DE-OhW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" id="6C2-uJ-bBu"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="mJ4-bR-LFx" secondAttribute="trailing" constant="-214" id="71I-Ni-BP4"/>
                             <constraint firstItem="Pwn-XF-OpG" firstAttribute="top" secondItem="mPS-4D-NGt" secondAttribute="bottom" constant="32" id="9hd-Ve-JOA"/>
@@ -271,7 +279,7 @@
                             <constraint firstItem="mPS-4D-NGt" firstAttribute="top" secondItem="k0U-HB-I8e" secondAttribute="bottom" constant="8" id="JKQ-cO-Be5"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RS3-gd-xuD"/>
                             <constraint firstItem="imj-9V-J9s" firstAttribute="centerY" secondItem="NOm-cz-kzH" secondAttribute="centerY" id="Sif-fD-GLB"/>
-                            <constraint firstItem="TaW-qf-aE8" firstAttribute="top" secondItem="Pwn-XF-OpG" secondAttribute="bottom" constant="48" id="TZa-qy-VkQ"/>
+                            <constraint firstItem="TaW-qf-aE8" firstAttribute="top" secondItem="Pwn-XF-OpG" secondAttribute="bottom" constant="24" id="TZa-qy-VkQ"/>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="U0I-3z-Oef"/>
                             <constraint firstItem="mJ4-bR-LFx" firstAttribute="centerY" secondItem="NOm-cz-kzH" secondAttribute="centerY" id="bKU-zJ-UL5"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eYr-YH-uSk"/>
@@ -289,6 +297,7 @@
                                 <exclude reference="9sw-En-YnK"/>
                                 <exclude reference="RS3-gd-xuD"/>
                                 <exclude reference="U0I-3z-Oef"/>
+                                <exclude reference="9hd-Ve-JOA"/>
                                 <exclude reference="ygH-32-PcA"/>
                                 <exclude reference="ebe-dw-ocj"/>
                             </mask>
@@ -300,16 +309,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AltHold" width="71" height="33"/>
+        <image name="AltHold" width="56" height="15"/>
         <image name="Background" width="667" height="375"/>
         <image name="Green_Light" width="11" height="11"/>
         <image name="Home_Selected" width="86" height="86"/>
-        <image name="Land" width="71" height="33"/>
+        <image name="Land" width="50" height="21"/>
         <image name="Locked_Normal" width="86" height="86"/>
-        <image name="Loiter" width="71" height="33"/>
+        <image name="Loiter" width="51" height="20"/>
         <image name="Red_Light" width="11" height="11"/>
-        <image name="Sports" width="71" height="33"/>
-        <image name="Stablize_Selected" width="71" height="33"/>
+        <image name="Sports" width="52" height="20"/>
+        <image name="Stablize_Selected" width="70" height="32"/>
+        <image name="Switch_Frame" width="351" height="33"/>
         <image name="Throll_Blank" width="17" height="244"/>
         <image name="Throll_Handle" width="39" height="14"/>
         <image name="Wheel_Blank" width="198" height="198"/>
