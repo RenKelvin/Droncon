@@ -13,6 +13,8 @@
 		A5EB66D91AF9CA4F002CB83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66D71AF9CA4F002CB83C /* Main.storyboard */; };
 		A5EB66DB1AF9CA4F002CB83C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */; };
 		A5EB66EA1AF9CA50002CB83C /* DronconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66E91AF9CA50002CB83C /* DronconTests.swift */; };
+		A5FA6D711AF9FDDA0050FA12 /* SocketAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */; };
+		A5FA6D781AF9FE080050FA12 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FA6D771AF9FE080050FA12 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 		A5EB66E31AF9CA50002CB83C /* DronconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DronconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB66E81AF9CA50002CB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB66E91AF9CA50002CB83C /* DronconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DronconTests.swift; sourceTree = "<group>"; };
+		A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAdapter.swift; sourceTree = "<group>"; };
+		A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Droncon-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5FA6D761AF9FE080050FA12 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		A5FA6D771AF9FE080050FA12 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		E4F658EA91E6A88EA121E961 /* Pods-Droncon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droncon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Droncon/Pods-Droncon.release.xcconfig"; sourceTree = "<group>"; };
 		F7D91374BAD2CD5F29BD2846 /* libPods-Droncon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,8 +107,11 @@
 			children = (
 				A5EB66D31AF9CA4F002CB83C /* AppDelegate.swift */,
 				A5EB66D51AF9CA4F002CB83C /* ViewController.swift */,
+				A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */,
 				A5EB66D71AF9CA4F002CB83C /* Main.storyboard */,
 				A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */,
+				A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */,
+				A5FA6D7A1AF9FE1A0050FA12 /* Vendor */,
 				A5EB66D11AF9CA4F002CB83C /* Supporting Files */,
 			);
 			path = Droncon;
@@ -131,6 +140,23 @@
 				A5EB66E81AF9CA50002CB83C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5FA6D791AF9FE130050FA12 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA6D761AF9FE080050FA12 /* JSONKit.h */,
+				A5FA6D771AF9FE080050FA12 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		A5FA6D7A1AF9FE1A0050FA12 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA6D791AF9FE130050FA12 /* JSONKit */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FA6D711AF9FDDA0050FA12 /* SocketAdapter.swift in Sources */,
 				A5EB66D61AF9CA4F002CB83C /* ViewController.swift in Sources */,
+				A5FA6D781AF9FE080050FA12 /* JSONKit.m in Sources */,
 				A5EB66D41AF9CA4F002CB83C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,11 +419,15 @@
 			baseConfigurationReference = 82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Droncon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Droncon/Droncon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -404,11 +436,14 @@
 			baseConfigurationReference = E4F658EA91E6A88EA121E961 /* Pods-Droncon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Droncon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Droncon/Droncon-Bridging-Header.h";
 			};
 			name = Release;
 		};
