@@ -138,6 +138,42 @@
                                             <constraint firstAttribute="width" constant="13" id="3OO-Cw-uhQ"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ki-ql-21o">
+                                        <rect key="frame" x="64" y="14" width="48" height="218"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Throll_Meter" translatesAutoresizingMaskIntoConstraints="NO" id="myf-HN-rea">
+                                                <rect key="frame" x="21" y="58" width="6" height="148"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="6" id="3vQ-3D-6To"/>
+                                                    <constraint firstAttribute="height" constant="109" id="sXb-Hh-nls"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="sXb-Hh-nls"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euA-BE-5sM" customClass="RCDraggableButton">
+                                                <rect key="frame" x="0.0" y="48" width="48" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="3J4-pc-lqN"/>
+                                                    <constraint firstAttribute="width" constant="48" id="cnf-8e-XWF"/>
+                                                </constraints>
+                                                <state key="normal" image="Throll_Handle">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="myf-HN-rea" secondAttribute="centerX" id="Pe7-oH-V1z"/>
+                                            <constraint firstAttribute="height" constant="218" id="SxS-9h-3vk"/>
+                                            <constraint firstAttribute="centerX" secondItem="euA-BE-5sM" secondAttribute="centerX" id="aJo-aO-Zoa"/>
+                                            <constraint firstItem="myf-HN-rea" firstAttribute="top" secondItem="euA-BE-5sM" secondAttribute="bottom" constant="-12" id="se5-s2-fqR"/>
+                                            <constraint firstItem="euA-BE-5sM" firstAttribute="top" secondItem="1ki-ql-21o" secondAttribute="top" constant="48" id="uAS-Lq-lab"/>
+                                            <constraint firstAttribute="width" constant="48" id="w2q-tY-UgB"/>
+                                            <constraint firstAttribute="bottom" secondItem="myf-HN-rea" secondAttribute="bottom" constant="12" id="wsW-Fo-GXr"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJm-ET-G6a">
                                         <rect key="frame" x="119" y="92" width="64" height="64"/>
                                         <constraints>
@@ -147,15 +183,9 @@
                                         <state key="normal" image="Yaw_Right">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euA-BE-5sM">
-                                        <rect key="frame" x="65" y="201" width="48" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="cnf-8e-XWF"/>
-                                        </constraints>
-                                        <state key="normal" image="Throll_Handle">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <connections>
+                                            <action selector="yawRightButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKQ-x7-tEx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esC-zO-WTA">
                                         <rect key="frame" x="-6" y="92" width="64" height="64"/>
@@ -166,18 +196,21 @@
                                         <state key="normal" image="Yaw_Left">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="yawLeftButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsH-Lk-wPB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="1ki-ql-21o" firstAttribute="top" secondItem="mJ4-bR-LFx" secondAttribute="top" constant="14" id="3gd-YQ-xMK"/>
                                     <constraint firstAttribute="centerX" secondItem="EQe-XL-tuH" secondAttribute="centerX" id="5yR-eK-muI"/>
                                     <constraint firstAttribute="centerY" secondItem="esC-zO-WTA" secondAttribute="centerY" id="GWs-L3-bSQ"/>
                                     <constraint firstItem="EQe-XL-tuH" firstAttribute="leading" secondItem="esC-zO-WTA" secondAttribute="trailing" constant="36" id="OUK-dc-xqT"/>
                                     <constraint firstAttribute="height" constant="248" id="SOo-wd-xLr"/>
                                     <constraint firstItem="EQe-XL-tuH" firstAttribute="leading" secondItem="esC-zO-WTA" secondAttribute="trailing" constant="24" id="WK2-xk-acn"/>
-                                    <constraint firstAttribute="bottom" secondItem="euA-BE-5sM" secondAttribute="bottom" constant="25" id="api-6J-tD7"/>
-                                    <constraint firstItem="euA-BE-5sM" firstAttribute="centerX" secondItem="EQe-XL-tuH" secondAttribute="centerX" id="fgG-Gs-CWp"/>
                                     <constraint firstAttribute="width" constant="176" id="hzn-NG-tSu"/>
                                     <constraint firstItem="EQe-XL-tuH" firstAttribute="top" secondItem="mJ4-bR-LFx" secondAttribute="top" id="ivS-Pn-ccZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="1ki-ql-21o" secondAttribute="centerX" id="kHB-fn-lYq"/>
                                     <constraint firstItem="sJm-ET-G6a" firstAttribute="leading" secondItem="EQe-XL-tuH" secondAttribute="trailing" constant="24" id="oua-Ro-2PB"/>
                                     <constraint firstAttribute="centerY" secondItem="sJm-ET-G6a" secondAttribute="centerY" id="pjV-cy-2qJ"/>
                                     <constraint firstAttribute="bottom" secondItem="EQe-XL-tuH" secondAttribute="bottom" id="yqE-4j-tDN"/>
@@ -194,15 +227,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel_Blank" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-uG-c5a">
                                         <rect key="frame" x="0.0" y="0.0" width="198" height="198"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQZ-LI-bBm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQZ-LI-bBm" customClass="RCDraggableButton">
                                         <rect key="frame" x="70" y="69" width="60" height="60"/>
                                         <gestureRecognizers/>
                                         <state key="normal" image="Wheel_Handle">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="ERd-hH-xMl" appends="YES" id="Z3T-25-IVh"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -360,14 +390,12 @@
                         <outlet property="flyModeButton3" destination="fny-BL-QtP" id="UN9-2N-FUX"/>
                         <outlet property="flyModeButton4" destination="WId-8t-Bgx" id="oEy-6m-FbG"/>
                         <outlet property="flyModeButton5" destination="SFC-uK-wbX" id="euy-7w-qrv"/>
+                        <outlet property="throllHandleButton" destination="euA-BE-5sM" id="Jv5-m5-3Z0"/>
+                        <outlet property="throllMeterImageView" destination="myf-HN-rea" id="40Y-LG-mWG"/>
+                        <outlet property="wheelHandleButton" destination="ZQZ-LI-bBm" id="Yeg-dF-TES"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="ERd-hH-xMl">
-                    <connections>
-                        <action selector="wheelHandleDragged:" destination="BYZ-38-t0r" id="EjI-y1-RLg"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
@@ -389,8 +417,9 @@
         <image name="Stablize_Selected" width="70" height="32"/>
         <image name="Switch_Frame" width="351" height="33"/>
         <image name="Takoff" width="64" height="64"/>
-        <image name="Throll_Blank" width="17" height="244"/>
+        <image name="Throll_Blank" width="17" height="243"/>
         <image name="Throll_Handle" width="39" height="14"/>
+        <image name="Throll_Meter" width="6" height="91"/>
         <image name="Unlock" width="64" height="64"/>
         <image name="Wheel_Blank" width="198" height="198"/>
         <image name="Wheel_Handle" width="60" height="60"/>

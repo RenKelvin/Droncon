@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var throllHandleButton: RCDraggableButton!
+    @IBOutlet var throllMeterImageView: UIImageView!
+
+    @IBOutlet var wheelHandleButton: RCDraggableButton!
+
     @IBOutlet var flyModeButton1: UIButton!
     @IBOutlet var flyModeButton2: UIButton!
     @IBOutlet var flyModeButton3: UIButton!
@@ -19,6 +24,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        // Init view controls
+        self.throllHandleButton.draggable = true
+        let throllHandleButtonY0 = throllHandleButton.frame.origin.y
+        let throllMeterImageViewY0 = throllMeterImageView.frame.origin.y
+        let throllMeterImageViewH0 = throllMeterImageView.frame.height
+        self.throllHandleButton.draggingBlock = { (button: RCDraggableButton!) -> Void in
+            let dY = button.frame.origin.y - throllHandleButtonY0
+            let rect1 = self.throllMeterImageView.frame
+            let rect2 = CGRectMake(rect1.origin.x, throllMeterImageViewY0+dY, rect1.width, throllMeterImageViewH0-dY)
+            self.throllMeterImageView.frame = rect2
+        }
+
+        self.wheelHandleButton.draggable = true
+        self.wheelHandleButton.autoDocking = true
+        self.wheelHandleButton.dockPoint = self.wheelHandleButton.center
+        self.wheelHandleButton.limitedDistance = 84.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +49,14 @@ class ViewController: UIViewController {
     }
 
     // MARK: - IBAction
+
+    @IBAction func yawLeftButtonTapped(sender: UIButton) {
+
+    }
+
+    @IBAction func yawRightButtonTapped(sender: UIButton) {
+
+    }
 
     @IBAction func lockButtonTapped(sender: UIButton) {
         sender.selected = !sender.selected
@@ -57,10 +87,6 @@ class ViewController: UIViewController {
         default:
             ""
         }
-    }
-
-    @IBAction func wheelHandleDragged(sender: UIButton) {
-        NSLog("123123123")
     }
     
 }
