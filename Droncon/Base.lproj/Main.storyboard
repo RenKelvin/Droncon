@@ -101,6 +101,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="Lock"/>
+                                        <connections>
+                                            <action selector="lockButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEX-qb-etf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-YM-MAd">
                                         <rect key="frame" x="92" y="0.0" width="64" height="64"/>
@@ -112,6 +115,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="Home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whn-qB-hHJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -210,17 +216,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
                                 <rect key="frame" x="125" y="556" width="350" height="32"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="bGZ-d0-AIB"/>
                                             <constraint firstAttribute="height" constant="32" id="f2z-GT-QHc"/>
                                         </constraints>
-                                        <state key="normal" image="Stablize_Selected">
+                                        <state key="normal" image="Stablize">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="Stablize_Selected"/>
+                                        <connections>
+                                            <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOr-A6-w53"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW8-0j-0YH">
+                                    <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW8-0j-0YH">
                                         <rect key="frame" x="70" y="0.0" width="70" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="lUC-qh-hsj"/>
@@ -229,8 +239,12 @@
                                         <state key="normal" image="AltHold">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="AltHold_Selected"/>
+                                        <connections>
+                                            <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bL-GB-doS"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fny-BL-QtP">
+                                    <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fny-BL-QtP">
                                         <rect key="frame" x="140" y="0.0" width="70" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="V9F-qn-jyO"/>
@@ -239,8 +253,12 @@
                                         <state key="normal" image="Loiter">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="Loiter_Selected"/>
+                                        <connections>
+                                            <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUy-hR-VHc"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-8t-Bgx">
+                                    <button opaque="NO" tag="4" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-8t-Bgx">
                                         <rect key="frame" x="210" y="0.0" width="70" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="7SZ-2p-gnb"/>
@@ -249,8 +267,12 @@
                                         <state key="normal" image="Land">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="Land_Selected"/>
+                                        <connections>
+                                            <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3G-7e-0Gi"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFC-uK-wbX">
+                                    <button opaque="NO" tag="5" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFC-uK-wbX">
                                         <rect key="frame" x="280" y="0.0" width="70" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="fhU-ch-k3w"/>
@@ -259,6 +281,10 @@
                                         <state key="normal" image="Sports">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="Sports_Selected"/>
+                                        <connections>
+                                            <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNj-Ua-CVr"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Switch_Frame" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-1x-9hU">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="32"/>
@@ -325,6 +351,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="flyModeButton1" destination="69a-hB-V30" id="oad-M4-beo"/>
+                        <outlet property="flyModeButton2" destination="XW8-0j-0YH" id="oNp-2A-nhW"/>
+                        <outlet property="flyModeButton3" destination="fny-BL-QtP" id="UN9-2N-FUX"/>
+                        <outlet property="flyModeButton4" destination="WId-8t-Bgx" id="oEy-6m-FbG"/>
+                        <outlet property="flyModeButton5" destination="SFC-uK-wbX" id="euy-7w-qrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,14 +365,19 @@
     </scenes>
     <resources>
         <image name="AltHold" width="56" height="15"/>
+        <image name="AltHold_Selected" width="70" height="32"/>
         <image name="Background" width="667" height="375"/>
         <image name="Green_Light" width="11" height="11"/>
         <image name="Home" width="64" height="64"/>
         <image name="Land" width="50" height="21"/>
+        <image name="Land_Selected" width="70" height="32"/>
         <image name="Lock" width="64" height="64"/>
         <image name="Loiter" width="51" height="20"/>
+        <image name="Loiter_Selected" width="70" height="32"/>
         <image name="Red_Light" width="11" height="11"/>
         <image name="Sports" width="52" height="20"/>
+        <image name="Sports_Selected" width="70" height="32"/>
+        <image name="Stablize" width="58" height="22"/>
         <image name="Stablize_Selected" width="70" height="32"/>
         <image name="Switch_Frame" width="351" height="33"/>
         <image name="Takoff" width="64" height="64"/>
