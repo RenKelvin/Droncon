@@ -131,14 +131,20 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esC-zO-WTA">
-                                        <rect key="frame" x="18" y="94" width="39" height="60"/>
+                                        <rect key="frame" x="20" y="95" width="37" height="59"/>
                                         <state key="normal" image="Yaw_Left">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJm-ET-G6a">
-                                        <rect key="frame" x="142" y="95" width="38" height="59"/>
+                                        <rect key="frame" x="142" y="95" width="36" height="59"/>
                                         <state key="normal" image="Yaw_Right">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euA-BE-5sM">
+                                        <rect key="frame" x="80" y="201" width="39" height="22"/>
+                                        <state key="normal" image="Throll_Handle">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -148,6 +154,8 @@
                                     <constraint firstAttribute="centerY" secondItem="esC-zO-WTA" secondAttribute="centerY" id="GWs-L3-bSQ"/>
                                     <constraint firstItem="EQe-XL-tuH" firstAttribute="leading" secondItem="esC-zO-WTA" secondAttribute="trailing" constant="36" id="OUK-dc-xqT"/>
                                     <constraint firstAttribute="height" constant="248" id="SOo-wd-xLr"/>
+                                    <constraint firstAttribute="bottom" secondItem="euA-BE-5sM" secondAttribute="bottom" constant="25" id="api-6J-tD7"/>
+                                    <constraint firstItem="euA-BE-5sM" firstAttribute="centerX" secondItem="EQe-XL-tuH" secondAttribute="centerX" id="fgG-Gs-CWp"/>
                                     <constraint firstAttribute="width" constant="198" id="hzn-NG-tSu"/>
                                     <constraint firstItem="EQe-XL-tuH" firstAttribute="top" secondItem="mJ4-bR-LFx" secondAttribute="top" id="ivS-Pn-ccZ"/>
                                     <constraint firstItem="sJm-ET-G6a" firstAttribute="leading" secondItem="EQe-XL-tuH" secondAttribute="trailing" constant="36" id="oua-Ro-2PB"/>
@@ -161,22 +169,91 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel_Blank" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-uG-c5a">
                                         <rect key="frame" x="0.0" y="0.0" width="198" height="198"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQZ-LI-bBm">
+                                        <rect key="frame" x="70" y="70" width="59" height="59"/>
+                                        <state key="normal" image="Wheel_Handle">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="GRw-uG-c5a" firstAttribute="leading" secondItem="imj-9V-J9s" secondAttribute="leading" id="DIf-VE-hod"/>
+                                    <constraint firstAttribute="centerX" secondItem="ZQZ-LI-bBm" secondAttribute="centerX" constant="-0.5" id="Ey9-g1-Izo"/>
                                     <constraint firstItem="GRw-uG-c5a" firstAttribute="top" secondItem="imj-9V-J9s" secondAttribute="top" id="L2e-Jz-Eyw"/>
                                     <constraint firstAttribute="bottom" secondItem="GRw-uG-c5a" secondAttribute="bottom" id="P19-GD-36P"/>
                                     <constraint firstAttribute="width" constant="198" id="Qbq-Os-gLt"/>
                                     <constraint firstAttribute="height" constant="198" id="UBT-V8-Bj9"/>
+                                    <constraint firstAttribute="centerY" secondItem="ZQZ-LI-bBm" secondAttribute="centerY" id="ew8-OP-ZlW"/>
                                     <constraint firstAttribute="trailing" secondItem="GRw-uG-c5a" secondAttribute="trailing" id="ezJ-DE-AM1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
-                                <rect key="frame" x="142" y="548" width="316" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="125" y="548" width="350" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="bGZ-d0-AIB"/>
+                                            <constraint firstAttribute="height" constant="32" id="f2z-GT-QHc"/>
+                                        </constraints>
+                                        <state key="normal" image="Stablize_Selected">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW8-0j-0YH">
+                                        <rect key="frame" x="70" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="lUC-qh-hsj"/>
+                                            <constraint firstAttribute="width" constant="70" id="swn-8R-cPu"/>
+                                        </constraints>
+                                        <state key="normal" image="AltHold">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fny-BL-QtP">
+                                        <rect key="frame" x="140" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="V9F-qn-jyO"/>
+                                            <constraint firstAttribute="height" constant="32" id="pDt-oD-I8T"/>
+                                        </constraints>
+                                        <state key="normal" image="Loiter">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-8t-Bgx">
+                                        <rect key="frame" x="210" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="7SZ-2p-gnb"/>
+                                            <constraint firstAttribute="width" constant="70" id="ZWS-Z0-XwF"/>
+                                        </constraints>
+                                        <state key="normal" image="Land">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFC-uK-wbX">
+                                        <rect key="frame" x="280" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="fhU-ch-k3w"/>
+                                            <constraint firstAttribute="width" constant="70" id="tMW-4h-8eJ"/>
+                                        </constraints>
+                                        <state key="normal" image="Sports">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <constraints>
+                                    <constraint firstItem="WId-8t-Bgx" firstAttribute="leading" secondItem="fny-BL-QtP" secondAttribute="trailing" id="92j-yG-Mfn"/>
+                                    <constraint firstItem="69a-hB-V30" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="FaD-Jo-pXg"/>
+                                    <constraint firstItem="SFC-uK-wbX" firstAttribute="leading" secondItem="WId-8t-Bgx" secondAttribute="trailing" id="KPx-nI-TYG"/>
+                                    <constraint firstItem="69a-hB-V30" firstAttribute="leading" secondItem="y40-0C-LUE" secondAttribute="leading" id="Xbe-BN-Liv"/>
+                                    <constraint firstItem="fny-BL-QtP" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="dgl-DT-qL3"/>
+                                    <constraint firstItem="XW8-0j-0YH" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="e4j-b1-Th9"/>
+                                    <constraint firstItem="SFC-uK-wbX" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="eUX-NM-Wk4"/>
                                     <constraint firstAttribute="height" constant="32" id="gkW-p8-Fd0"/>
-                                    <constraint firstAttribute="width" constant="316" id="qi5-zR-rRb"/>
+                                    <constraint firstItem="XW8-0j-0YH" firstAttribute="leading" secondItem="69a-hB-V30" secondAttribute="trailing" id="lnq-T1-SEb"/>
+                                    <constraint firstItem="WId-8t-Bgx" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="olB-pl-jh4"/>
+                                    <constraint firstItem="fny-BL-QtP" firstAttribute="leading" secondItem="XW8-0j-0YH" secondAttribute="trailing" id="pn2-Qc-qoL"/>
+                                    <constraint firstAttribute="width" constant="350" id="qi5-zR-rRb"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -223,15 +300,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AltHold" width="71" height="33"/>
         <image name="Background" width="667" height="375"/>
         <image name="Green_Light" width="11" height="11"/>
         <image name="Home_Selected" width="86" height="86"/>
+        <image name="Land" width="71" height="33"/>
         <image name="Locked_Normal" width="86" height="86"/>
+        <image name="Loiter" width="71" height="33"/>
         <image name="Red_Light" width="11" height="11"/>
+        <image name="Sports" width="71" height="33"/>
+        <image name="Stablize_Selected" width="71" height="33"/>
         <image name="Throll_Blank" width="17" height="244"/>
+        <image name="Throll_Handle" width="39" height="14"/>
         <image name="Wheel_Blank" width="198" height="198"/>
-        <image name="Yaw_Left" width="39" height="60"/>
-        <image name="Yaw_Right" width="38" height="59"/>
+        <image name="Wheel_Handle" width="59" height="59"/>
+        <image name="Yaw_Left" width="37" height="59"/>
+        <image name="Yaw_Right" width="36" height="59"/>
         <image name="Yellow_Light" width="11" height="11"/>
     </resources>
 </document>
