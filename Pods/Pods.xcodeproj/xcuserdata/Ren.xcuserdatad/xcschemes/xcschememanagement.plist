@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Droncon-RCDraggableButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Droncon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D1A24335413A7E63658DE8A6</key>
+		<key>6226B92FDD37A9D9B8D6651E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7F53A2314476B622E5F07D2</key>
+		<key>800F3226884ADE3FDFD7E6BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9806EC23BF9CE9139D209B0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

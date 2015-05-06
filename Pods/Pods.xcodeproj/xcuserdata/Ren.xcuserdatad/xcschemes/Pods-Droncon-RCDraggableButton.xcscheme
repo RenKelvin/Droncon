@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "800F3226884ADE3FDFD7E6BB"
-               BuildableName = "libPods-Droncon-CocoaAsyncSocket.a"
-               BlueprintName = "Pods-Droncon-CocoaAsyncSocket"
+               BlueprintIdentifier = "6226B92FDD37A9D9B8D6651E"
+               BuildableName = "libPods-Droncon-RCDraggableButton.a"
+               BlueprintName = "Pods-Droncon-RCDraggableButton"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

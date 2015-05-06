@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_CocoaAsyncSocket 4
 #define COCOAPODS_VERSION_PATCH_CocoaAsyncSocket 1
 
+// RCDraggableButton
+#define COCOAPODS_POD_AVAILABLE_RCDraggableButton
+#define COCOAPODS_VERSION_MAJOR_RCDraggableButton 0
+#define COCOAPODS_VERSION_MINOR_RCDraggableButton 4
+#define COCOAPODS_VERSION_PATCH_RCDraggableButton 0
+

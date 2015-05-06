@@ -35,7 +35,7 @@ class SocketAdapter: NSObject {
 
     var cmd: Int = 0
 
-    // MARK: -
+    // MARK: - AsyncSocket Main
 
     func connect() {
         self.socket.setDelegate(self)

@@ -58,5 +58,10 @@ class ViewController: UIViewController {
             ""
         }
     }
+
+    @IBAction func wheelHandleDragged(sender: UIButton) {
+        NSLog("123123123")
+    }
+    
 }
 
