@@ -6,3 +6,4 @@
 #include "JSONKit.h"
 #include "RCDraggableButton.h"
 #include "ACEDrawingView.h"
+#include "ACEDrawingTools.h"
