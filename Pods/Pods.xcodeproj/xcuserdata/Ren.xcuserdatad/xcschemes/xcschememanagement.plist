@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Droncon-ACEDrawingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Droncon-CocoaAsyncSocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04850124326C71AE95E7F3A3</key>
+		<key>2F4C0983368880C0D63F45DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19B298260A14512D901DD87E</key>
+		<key>68C6E4907FF4BEC920D63669</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE0111A10088FC8BEB103019</key>
+		<key>9CA98CE005FC65B78A730A73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAF0A470054F29B423B6C899</key>
 		<dict>
 			<key>primary</key>
 			<true/>

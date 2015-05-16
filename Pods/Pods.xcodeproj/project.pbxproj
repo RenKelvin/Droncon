@@ -7,225 +7,281 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		453263B4890FF06C2CDAC16A /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 511FD809D4FE8587A031FF19 /* GCDAsyncSocket.h */; };
-		6568ABB3EE24B7E502F99B37 /* AsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 68010C21237D42305D147911 /* AsyncUdpSocket.h */; };
-		7203F08F865F5A4CCA79F189 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5345D9277F372E0AD28E6A0 /* CFNetwork.framework */; };
-		72E232458BD315CA52D09ACB /* Pods-Droncon-RCDraggableButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87645B18C1F2D99BEFBC32E6 /* Pods-Droncon-RCDraggableButton-dummy.m */; };
-		86CAA583C23F8E30429CC785 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FB537B87B02B4DEC7053F /* Security.framework */; };
-		8762A40B0105526506A0F354 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED85C07D42D121D3FD903F2 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		974A08829DE6C25B3170629E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B1D96A7DE8A7291640754 /* Foundation.framework */; };
-		AA2D30F8CDDC63B8EF813E06 /* Pods-Droncon-CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDF6FB1D657874186500E4 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */; };
-		CB35927D487C6BE781A401D2 /* RCDraggableButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EE94343F6496AA8FA51A414A /* RCDraggableButton.h */; };
-		DCE84D3F7CA887285B37669D /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 293606C1F0AE11523F83AF1F /* RCDraggableButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E47C74968B6321DF815A1C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B1D96A7DE8A7291640754 /* Foundation.framework */; };
-		E63986D926520C68A06327DD /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D124671AA62B525340E3878 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E6A346EBED161A165FA52DE1 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60608283B23F107882AE1353 /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E81F8D5AA72647D0DEA07E5B /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE82C2814DD53CC32498DC4 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E871A1A9FDE2A1E8D478607A /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FB46C878E96F27ADA8767E /* GCDAsyncUdpSocket.h */; };
-		F3BA860A534C02089CFF6CAE /* Pods-Droncon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CD96B5E5C2E7F94D45FB83 /* Pods-Droncon-dummy.m */; };
-		F9741C0869D98DE2B804A1AE /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F13ACE438DE231F6036624F /* AsyncSocket.h */; };
-		FC3644CA802585006F24CBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15B1D96A7DE8A7291640754 /* Foundation.framework */; };
+		02A0DC4A9389A610CCE437E6 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 82683B2524A3B436A7C93ABD /* GCDAsyncSocket.h */; };
+		12AA2E1729C7F548F6A3F7C0 /* Pods-Droncon-CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 948DB93B363FD36E618D8192 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */; };
+		160398B511C77FA02FA08F39 /* ACEDrawingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E92BEAAB0C683BFBF0B6812 /* ACEDrawingTools.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1D10D357A57F4FECF91F9201 /* AsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6400A4C93F44CB45BC07C35A /* AsyncUdpSocket.h */; };
+		2F72DA33E1F21BDE68428D7F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB08A0A22CD0FA49040B415 /* Security.framework */; };
+		355A2302EE05E93011277275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F74F41E647398A8917A63E /* Foundation.framework */; };
+		3651E81AE051E323C555EE8F /* Pods-Droncon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7E3CE0F6C7F79CBF808C0A /* Pods-Droncon-dummy.m */; };
+		399F4D10049D2EA9EA2DF8C7 /* RCDraggableButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A11A9737BFD037117B57A507 /* RCDraggableButton.h */; };
+		3C65A97D6A587AA57588AAD7 /* ACEDrawingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8F7C18EDC41AD1798E3D54 /* ACEDrawingView.h */; };
+		3D9D6E6432B4620B31289267 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77178DF650AD8753C8623AEB /* CFNetwork.framework */; };
+		41AB17DCDE6A0D36857FFBE0 /* Pods-Droncon-RCDraggableButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B750DE64029C653D0B597600 /* Pods-Droncon-RCDraggableButton-dummy.m */; };
+		4A67578C0438F66CE2281077 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDACB631B257BD8AE1F5EAB /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		597BE301F0F3845D678B72CE /* Pods-Droncon-ACEDrawingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACCC28DF79B2C99C4D7B54 /* Pods-Droncon-ACEDrawingView-dummy.m */; };
+		60B0326D45F7399CF6363117 /* ACEDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFF35FA5DAEDB13E9DF1D25 /* ACEDrawingView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6A1D87D0DF2CEEE9C4B57F04 /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 314DB30E5C26718984A232A3 /* RCDraggableButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6D3E462C0CECD08FF256B532 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F74F41E647398A8917A63E /* Foundation.framework */; };
+		8CE0A241EA7D0F8870A56B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F74F41E647398A8917A63E /* Foundation.framework */; };
+		8EBDC4D7A00C38FD1F2AA0D2 /* ACEDrawingTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DB8CF48C8C99AB8CCA48FC /* ACEDrawingTools.h */; };
+		B343F9478484E7087F4EE2BD /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C50553E06B3A21889C00F894 /* GCDAsyncUdpSocket.h */; };
+		BA8583124DA16E3A8BFE9028 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF11D09683C93CCD241E89 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BE315473DCA25B04442AF79C /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E999B738A417FD23DDDB1C /* AsyncSocket.h */; };
+		BE693FB63F63B098CC9AEE8D /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BE170522CB983AEE3C9E /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CF37212DE473A767AF933BCD /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD78A9DEC58DDE94411F71A /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FEFAAB8DF9F5D7ABC82B1124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F74F41E647398A8917A63E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		869CEA0BB99A7C50D048F178 /* PBXContainerItemProxy */ = {
+		94F1D85509DE5BA6D1E37FB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F72E1C06633665BCC10F2C86 /* Project object */;
+			containerPortal = FFDBF0A92433A87F7C02BB23 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 04850124326C71AE95E7F3A3;
+			remoteGlobalIDString = 2F4C0983368880C0D63F45DC;
 			remoteInfo = "Pods-Droncon-CocoaAsyncSocket";
 		};
-		8F0D0E64F4D0D4479196B2AD /* PBXContainerItemProxy */ = {
+		D8DA4CE64E695A5B92563E0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F72E1C06633665BCC10F2C86 /* Project object */;
+			containerPortal = FFDBF0A92433A87F7C02BB23 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EE0111A10088FC8BEB103019;
+			remoteGlobalIDString = 9CA98CE005FC65B78A730A73;
 			remoteInfo = "Pods-Droncon-RCDraggableButton";
+		};
+		EFEE5D8149D3488E87C2DCCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFDBF0A92433A87F7C02BB23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAF0A470054F29B423B6C899;
+			remoteInfo = "Pods-Droncon-ACEDrawingView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07E0F747C5AB6F3B308FAD5F /* libPods-Droncon-CocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon-CocoaAsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D19C0F1C5CED57D33916C4 /* Pods-Droncon-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droncon-resources.sh"; sourceTree = "<group>"; };
-		15B16E37495E633CF9EAFD1C /* Pods-Droncon-RCDraggableButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-RCDraggableButton.xcconfig"; sourceTree = "<group>"; };
-		293606C1F0AE11523F83AF1F /* RCDraggableButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDraggableButton.m; path = Src/RCDraggableButton.m; sourceTree = "<group>"; };
-		2B62C30562CCB0A50FE2969E /* libPods-Droncon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D181FA7170E40327E2458C2 /* Pods-Droncon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Droncon-acknowledgements.markdown"; sourceTree = "<group>"; };
-		488029D1CF275791F8739324 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-RCDraggableButton-Private.xcconfig"; sourceTree = "<group>"; };
-		4F13ACE438DE231F6036624F /* AsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = RunLoop/AsyncSocket.h; sourceTree = "<group>"; };
-		511FD809D4FE8587A031FF19 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
-		5DCDF6FB1D657874186500E4 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
-		60608283B23F107882AE1353 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = RunLoop/AsyncUdpSocket.m; sourceTree = "<group>"; };
-		68010C21237D42305D147911 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = RunLoop/AsyncUdpSocket.h; sourceTree = "<group>"; };
-		7D124671AA62B525340E3878 /* AsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = RunLoop/AsyncSocket.m; sourceTree = "<group>"; };
-		7EE82C2814DD53CC32498DC4 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		8330CC685ED3CA891E1BD73C /* Pods-Droncon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon.release.xcconfig"; sourceTree = "<group>"; };
-		87645B18C1F2D99BEFBC32E6 /* Pods-Droncon-RCDraggableButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-RCDraggableButton-dummy.m"; sourceTree = "<group>"; };
-		8CD523A5B474D213FC5418C0 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-CocoaAsyncSocket-Private.xcconfig"; sourceTree = "<group>"; };
-		97C06CBBA2B01F7971DF8A52 /* Pods-Droncon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droncon-acknowledgements.plist"; sourceTree = "<group>"; };
-		98F9348FB10D9F269507F7CA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9ED85C07D42D121D3FD903F2 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
-		A13F83388C7B4852559E85ED /* Pods-Droncon-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-environment.h"; sourceTree = "<group>"; };
-		A32069DF7811A48E6615939C /* libPods-Droncon-RCDraggableButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon-RCDraggableButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0CCA2905C96AF1FAD9DA2DB /* Pods-Droncon-CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-CocoaAsyncSocket.xcconfig"; sourceTree = "<group>"; };
-		B5345D9277F372E0AD28E6A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		B87601106F9AE36925F71F26 /* Pods-Droncon-RCDraggableButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-RCDraggableButton-prefix.pch"; sourceTree = "<group>"; };
-		B9FB46C878E96F27ADA8767E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		C8CD96B5E5C2E7F94D45FB83 /* Pods-Droncon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-dummy.m"; sourceTree = "<group>"; };
-		CE4899758E379F210284B4FA /* Pods-Droncon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon.debug.xcconfig"; sourceTree = "<group>"; };
-		D15B1D96A7DE8A7291640754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DD21FED791C306139AC5E49C /* Pods-Droncon-CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
-		EE94343F6496AA8FA51A414A /* RCDraggableButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDraggableButton.h; path = Src/RCDraggableButton.h; sourceTree = "<group>"; };
-		FD4FB537B87B02B4DEC7053F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		05ACCC28DF79B2C99C4D7B54 /* Pods-Droncon-ACEDrawingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-ACEDrawingView-dummy.m"; sourceTree = "<group>"; };
+		08F74F41E647398A8917A63E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0AD78A9DEC58DDE94411F71A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		17503C88AD7EA81DC8814183 /* Pods-Droncon-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-environment.h"; sourceTree = "<group>"; };
+		1E92BEAAB0C683BFBF0B6812 /* ACEDrawingTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEDrawingTools.m; path = ACEDrawingView/ACEDrawingTools.m; sourceTree = "<group>"; };
+		1FB76D020E050D3AEA62662C /* Pods-Droncon-RCDraggableButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-RCDraggableButton-prefix.pch"; sourceTree = "<group>"; };
+		314DB30E5C26718984A232A3 /* RCDraggableButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDraggableButton.m; path = Src/RCDraggableButton.m; sourceTree = "<group>"; };
+		3EDACB631B257BD8AE1F5EAB /* AsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = RunLoop/AsyncSocket.m; sourceTree = "<group>"; };
+		4EB08A0A22CD0FA49040B415 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		4FB6FA35EA5A8AB1CB8F8563 /* Pods-Droncon-RCDraggableButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-RCDraggableButton.xcconfig"; sourceTree = "<group>"; };
+		551474F080A3047774689CE9 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-CocoaAsyncSocket-Private.xcconfig"; sourceTree = "<group>"; };
+		60EE9AAB377D66FEF67D14DF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6400A4C93F44CB45BC07C35A /* AsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = RunLoop/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		6ABAB9964D0AD3AD0BB21462 /* libPods-Droncon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		729EADA27DAB7E26FFC9910D /* Pods-Droncon-CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		75288D3A2CD2C2C50F9E957C /* libPods-Droncon-CocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon-CocoaAsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77178DF650AD8753C8623AEB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		82683B2524A3B436A7C93ABD /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		87170BC618653FE712DD20E4 /* Pods-Droncon-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droncon-resources.sh"; sourceTree = "<group>"; };
+		8EF50364DB36299C6618A901 /* libPods-Droncon-ACEDrawingView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon-ACEDrawingView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C776E37147A63CC326B341 /* Pods-Droncon-ACEDrawingView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-ACEDrawingView-Private.xcconfig"; sourceTree = "<group>"; };
+		948DB93B363FD36E618D8192 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		9580F52ECBBED880EDBB9363 /* Pods-Droncon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Droncon-acknowledgements.markdown"; sourceTree = "<group>"; };
+		99DB8CF48C8C99AB8CCA48FC /* ACEDrawingTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEDrawingTools.h; path = ACEDrawingView/ACEDrawingTools.h; sourceTree = "<group>"; };
+		9B8F7C18EDC41AD1798E3D54 /* ACEDrawingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACEDrawingView.h; path = ACEDrawingView/ACEDrawingView.h; sourceTree = "<group>"; };
+		A11A9737BFD037117B57A507 /* RCDraggableButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDraggableButton.h; path = Src/RCDraggableButton.h; sourceTree = "<group>"; };
+		A5CDB986CEFC5EE1499CA83F /* Pods-Droncon-CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-CocoaAsyncSocket.xcconfig"; sourceTree = "<group>"; };
+		AA7E3CE0F6C7F79CBF808C0A /* Pods-Droncon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-dummy.m"; sourceTree = "<group>"; };
+		B750DE64029C653D0B597600 /* Pods-Droncon-RCDraggableButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droncon-RCDraggableButton-dummy.m"; sourceTree = "<group>"; };
+		BFFF35FA5DAEDB13E9DF1D25 /* ACEDrawingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACEDrawingView.m; path = ACEDrawingView/ACEDrawingView.m; sourceTree = "<group>"; };
+		C50553E06B3A21889C00F894 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		CB89DCE0B97DFFB8930E5B50 /* Pods-Droncon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE425FFCA67DB221F739BD3 /* Pods-Droncon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droncon-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2AD1AB093F9CCCF5F6F94DB /* Pods-Droncon-ACEDrawingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droncon-ACEDrawingView-prefix.pch"; sourceTree = "<group>"; };
+		D6B9C61323BDDDF35B6FE459 /* libPods-Droncon-RCDraggableButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droncon-RCDraggableButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB16BE170522CB983AEE3C9E /* AsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = RunLoop/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		DBA6CB7B3CB10C93B80F7965 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-RCDraggableButton-Private.xcconfig"; sourceTree = "<group>"; };
+		DEDF11D09683C93CCD241E89 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E02884D324E59D01966C846E /* Pods-Droncon-ACEDrawingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon-ACEDrawingView.xcconfig"; sourceTree = "<group>"; };
+		E7E999B738A417FD23DDDB1C /* AsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = RunLoop/AsyncSocket.h; sourceTree = "<group>"; };
+		FF9520B32C423AD5C5A3C69B /* Pods-Droncon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droncon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38CC34B8EB0A49AF5972C076 /* Frameworks */ = {
+		4B6A983905E47C00A26693FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47C74968B6321DF815A1C03 /* Foundation.framework in Frameworks */,
+				FEFAAB8DF9F5D7ABC82B1124 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		597234E2EDDAC89022C0050D /* Frameworks */ = {
+		912FA16CF2BF0E1D7D878877 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7203F08F865F5A4CCA79F189 /* CFNetwork.framework in Frameworks */,
-				FC3644CA802585006F24CBE1 /* Foundation.framework in Frameworks */,
-				86CAA583C23F8E30429CC785 /* Security.framework in Frameworks */,
+				6D3E462C0CECD08FF256B532 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BED05B10C3F4A7B5A2BEDB3 /* Frameworks */ = {
+		AD86911DAB90554465184C58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974A08829DE6C25B3170629E /* Foundation.framework in Frameworks */,
+				8CE0A241EA7D0F8870A56B78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F093BDC2FCACDDCA2E5AF83D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9D6E6432B4620B31289267 /* CFNetwork.framework in Frameworks */,
+				355A2302EE05E93011277275 /* Foundation.framework in Frameworks */,
+				2F72DA33E1F21BDE68428D7F /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13A3F877190E96AACCC77A82 /* iOS */ = {
+		0DCA88EF3BEF160B42661565 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5345D9277F372E0AD28E6A0 /* CFNetwork.framework */,
-				D15B1D96A7DE8A7291640754 /* Foundation.framework */,
-				FD4FB537B87B02B4DEC7053F /* Security.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3C7053A4C932885F84EB6065 = {
-			isa = PBXGroup;
-			children = (
-				98F9348FB10D9F269507F7CA /* Podfile */,
-				8A70D298DB1FC3A13F5E9E3B /* Frameworks */,
-				F32F31248D088E73E372A926 /* Pods */,
-				856253D10C5CEBD7AF96764A /* Products */,
-				54EAEB146BD12F24807C24C0 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		4820FAF7C9C1D55AF58C34D6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				15B16E37495E633CF9EAFD1C /* Pods-Droncon-RCDraggableButton.xcconfig */,
-				488029D1CF275791F8739324 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */,
-				87645B18C1F2D99BEFBC32E6 /* Pods-Droncon-RCDraggableButton-dummy.m */,
-				B87601106F9AE36925F71F26 /* Pods-Droncon-RCDraggableButton-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Droncon-RCDraggableButton";
-			sourceTree = "<group>";
-		};
-		54EAEB146BD12F24807C24C0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BAE52DB94E09CAD962558CC2 /* Pods-Droncon */,
+				318FC2A6414EE714F00E47E5 /* Pods-Droncon */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7941DB81B1EE0CF6BC66FD8C /* CocoaAsyncSocket */ = {
+		1DFD156966EBD4C56E1776CC /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				4F13ACE438DE231F6036624F /* AsyncSocket.h */,
-				7D124671AA62B525340E3878 /* AsyncSocket.m */,
-				68010C21237D42305D147911 /* AsyncUdpSocket.h */,
-				60608283B23F107882AE1353 /* AsyncUdpSocket.m */,
-				511FD809D4FE8587A031FF19 /* GCDAsyncSocket.h */,
-				9ED85C07D42D121D3FD903F2 /* GCDAsyncSocket.m */,
-				B9FB46C878E96F27ADA8767E /* GCDAsyncUdpSocket.h */,
-				7EE82C2814DD53CC32498DC4 /* GCDAsyncUdpSocket.m */,
-				F0E7ADEA5C48F4AB4340EFC1 /* Support Files */,
+				E7E999B738A417FD23DDDB1C /* AsyncSocket.h */,
+				3EDACB631B257BD8AE1F5EAB /* AsyncSocket.m */,
+				6400A4C93F44CB45BC07C35A /* AsyncUdpSocket.h */,
+				DB16BE170522CB983AEE3C9E /* AsyncUdpSocket.m */,
+				82683B2524A3B436A7C93ABD /* GCDAsyncSocket.h */,
+				DEDF11D09683C93CCD241E89 /* GCDAsyncSocket.m */,
+				C50553E06B3A21889C00F894 /* GCDAsyncUdpSocket.h */,
+				0AD78A9DEC58DDE94411F71A /* GCDAsyncUdpSocket.m */,
+				86F036947EDBC38A36680407 /* Support Files */,
 			);
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
-		856253D10C5CEBD7AF96764A /* Products */ = {
+		223572E040D536A424367BE7 /* RCDraggableButton */ = {
 			isa = PBXGroup;
 			children = (
-				2B62C30562CCB0A50FE2969E /* libPods-Droncon.a */,
-				07E0F747C5AB6F3B308FAD5F /* libPods-Droncon-CocoaAsyncSocket.a */,
-				A32069DF7811A48E6615939C /* libPods-Droncon-RCDraggableButton.a */,
+				A11A9737BFD037117B57A507 /* RCDraggableButton.h */,
+				314DB30E5C26718984A232A3 /* RCDraggableButton.m */,
+				F12ED54A70CFFBEC04AF67DB /* Support Files */,
 			);
-			name = Products;
+			path = RCDraggableButton;
 			sourceTree = "<group>";
 		};
-		8A70D298DB1FC3A13F5E9E3B /* Frameworks */ = {
+		318FC2A6414EE714F00E47E5 /* Pods-Droncon */ = {
 			isa = PBXGroup;
 			children = (
-				13A3F877190E96AACCC77A82 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BAE52DB94E09CAD962558CC2 /* Pods-Droncon */ = {
-			isa = PBXGroup;
-			children = (
-				3D181FA7170E40327E2458C2 /* Pods-Droncon-acknowledgements.markdown */,
-				97C06CBBA2B01F7971DF8A52 /* Pods-Droncon-acknowledgements.plist */,
-				C8CD96B5E5C2E7F94D45FB83 /* Pods-Droncon-dummy.m */,
-				A13F83388C7B4852559E85ED /* Pods-Droncon-environment.h */,
-				10D19C0F1C5CED57D33916C4 /* Pods-Droncon-resources.sh */,
-				CE4899758E379F210284B4FA /* Pods-Droncon.debug.xcconfig */,
-				8330CC685ED3CA891E1BD73C /* Pods-Droncon.release.xcconfig */,
+				9580F52ECBBED880EDBB9363 /* Pods-Droncon-acknowledgements.markdown */,
+				CEE425FFCA67DB221F739BD3 /* Pods-Droncon-acknowledgements.plist */,
+				AA7E3CE0F6C7F79CBF808C0A /* Pods-Droncon-dummy.m */,
+				17503C88AD7EA81DC8814183 /* Pods-Droncon-environment.h */,
+				87170BC618653FE712DD20E4 /* Pods-Droncon-resources.sh */,
+				CB89DCE0B97DFFB8930E5B50 /* Pods-Droncon.debug.xcconfig */,
+				FF9520B32C423AD5C5A3C69B /* Pods-Droncon.release.xcconfig */,
 			);
 			name = "Pods-Droncon";
 			path = "Target Support Files/Pods-Droncon";
 			sourceTree = "<group>";
 		};
-		D6C7463FF43D71EE828FA1D6 /* RCDraggableButton */ = {
+		5A1C7302B13A6AE3E8EB4E7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE94343F6496AA8FA51A414A /* RCDraggableButton.h */,
-				293606C1F0AE11523F83AF1F /* RCDraggableButton.m */,
-				4820FAF7C9C1D55AF58C34D6 /* Support Files */,
+				E02884D324E59D01966C846E /* Pods-Droncon-ACEDrawingView.xcconfig */,
+				92C776E37147A63CC326B341 /* Pods-Droncon-ACEDrawingView-Private.xcconfig */,
+				05ACCC28DF79B2C99C4D7B54 /* Pods-Droncon-ACEDrawingView-dummy.m */,
+				D2AD1AB093F9CCCF5F6F94DB /* Pods-Droncon-ACEDrawingView-prefix.pch */,
 			);
-			path = RCDraggableButton;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Droncon-ACEDrawingView";
 			sourceTree = "<group>";
 		};
-		F0E7ADEA5C48F4AB4340EFC1 /* Support Files */ = {
+		5E638EE14F52CAB91923E3AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0CCA2905C96AF1FAD9DA2DB /* Pods-Droncon-CocoaAsyncSocket.xcconfig */,
-				8CD523A5B474D213FC5418C0 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */,
-				5DCDF6FB1D657874186500E4 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */,
-				DD21FED791C306139AC5E49C /* Pods-Droncon-CocoaAsyncSocket-prefix.pch */,
+				6ABAB9964D0AD3AD0BB21462 /* libPods-Droncon.a */,
+				8EF50364DB36299C6618A901 /* libPods-Droncon-ACEDrawingView.a */,
+				75288D3A2CD2C2C50F9E957C /* libPods-Droncon-CocoaAsyncSocket.a */,
+				D6B9C61323BDDDF35B6FE459 /* libPods-Droncon-RCDraggableButton.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86F036947EDBC38A36680407 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDB986CEFC5EE1499CA83F /* Pods-Droncon-CocoaAsyncSocket.xcconfig */,
+				551474F080A3047774689CE9 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */,
+				948DB93B363FD36E618D8192 /* Pods-Droncon-CocoaAsyncSocket-dummy.m */,
+				729EADA27DAB7E26FFC9910D /* Pods-Droncon-CocoaAsyncSocket-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Droncon-CocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
-		F32F31248D088E73E372A926 /* Pods */ = {
+		93762ABA18B0043413084456 /* ACEDrawingView */ = {
 			isa = PBXGroup;
 			children = (
-				7941DB81B1EE0CF6BC66FD8C /* CocoaAsyncSocket */,
-				D6C7463FF43D71EE828FA1D6 /* RCDraggableButton */,
+				99DB8CF48C8C99AB8CCA48FC /* ACEDrawingTools.h */,
+				1E92BEAAB0C683BFBF0B6812 /* ACEDrawingTools.m */,
+				9B8F7C18EDC41AD1798E3D54 /* ACEDrawingView.h */,
+				BFFF35FA5DAEDB13E9DF1D25 /* ACEDrawingView.m */,
+				5A1C7302B13A6AE3E8EB4E7B /* Support Files */,
+			);
+			path = ACEDrawingView;
+			sourceTree = "<group>";
+		};
+		A176D5EFD24DF3E4B66CE747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6470DE5854445A096C59F0E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6470DE5854445A096C59F0E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				77178DF650AD8753C8623AEB /* CFNetwork.framework */,
+				08F74F41E647398A8917A63E /* Foundation.framework */,
+				4EB08A0A22CD0FA49040B415 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A8D427A7239A1B29D121357F = {
+			isa = PBXGroup;
+			children = (
+				60EE9AAB377D66FEF67D14DF /* Podfile */,
+				A176D5EFD24DF3E4B66CE747 /* Frameworks */,
+				F99A8060BE46CD99FF02E7F0 /* Pods */,
+				5E638EE14F52CAB91923E3AB /* Products */,
+				0DCA88EF3BEF160B42661565 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F12ED54A70CFFBEC04AF67DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FB6FA35EA5A8AB1CB8F8563 /* Pods-Droncon-RCDraggableButton.xcconfig */,
+				DBA6CB7B3CB10C93B80F7965 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */,
+				B750DE64029C653D0B597600 /* Pods-Droncon-RCDraggableButton-dummy.m */,
+				1FB76D020E050D3AEA62662C /* Pods-Droncon-RCDraggableButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Droncon-RCDraggableButton";
+			sourceTree = "<group>";
+		};
+		F99A8060BE46CD99FF02E7F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93762ABA18B0043413084456 /* ACEDrawingView */,
+				1DFD156966EBD4C56E1776CC /* CocoaAsyncSocket */,
+				223572E040D536A424367BE7 /* RCDraggableButton */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -233,35 +289,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3518C941B3D6A06A69FB4B02 /* Headers */ = {
+		36258A2A9B228C15C776CB21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB35927D487C6BE781A401D2 /* RCDraggableButton.h in Headers */,
+				8EBDC4D7A00C38FD1F2AA0D2 /* ACEDrawingTools.h in Headers */,
+				3C65A97D6A587AA57588AAD7 /* ACEDrawingView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F932F64D3FC363432225BE4 /* Headers */ = {
+		483DD38118CD0489C1303685 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9741C0869D98DE2B804A1AE /* AsyncSocket.h in Headers */,
-				6568ABB3EE24B7E502F99B37 /* AsyncUdpSocket.h in Headers */,
-				453263B4890FF06C2CDAC16A /* GCDAsyncSocket.h in Headers */,
-				E871A1A9FDE2A1E8D478607A /* GCDAsyncUdpSocket.h in Headers */,
+				BE315473DCA25B04442AF79C /* AsyncSocket.h in Headers */,
+				1D10D357A57F4FECF91F9201 /* AsyncUdpSocket.h in Headers */,
+				02A0DC4A9389A610CCE437E6 /* GCDAsyncSocket.h in Headers */,
+				B343F9478484E7087F4EE2BD /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20CD275ADCF0A3E52F2354C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399F4D10049D2EA9EA2DF8C7 /* RCDraggableButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		04850124326C71AE95E7F3A3 /* Pods-Droncon-CocoaAsyncSocket */ = {
+		2F4C0983368880C0D63F45DC /* Pods-Droncon-CocoaAsyncSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D54567C6A2A1A897B834062 /* Build configuration list for PBXNativeTarget "Pods-Droncon-CocoaAsyncSocket" */;
+			buildConfigurationList = 62D8638A4E2166B17F834191 /* Build configuration list for PBXNativeTarget "Pods-Droncon-CocoaAsyncSocket" */;
 			buildPhases = (
-				78228608334F3CFB959CAC86 /* Sources */,
-				597234E2EDDAC89022C0050D /* Frameworks */,
-				9F932F64D3FC363432225BE4 /* Headers */,
+				02155C64109FA4A1904CD41A /* Sources */,
+				F093BDC2FCACDDCA2E5AF83D /* Frameworks */,
+				483DD38118CD0489C1303685 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -269,34 +334,35 @@
 			);
 			name = "Pods-Droncon-CocoaAsyncSocket";
 			productName = "Pods-Droncon-CocoaAsyncSocket";
-			productReference = 07E0F747C5AB6F3B308FAD5F /* libPods-Droncon-CocoaAsyncSocket.a */;
+			productReference = 75288D3A2CD2C2C50F9E957C /* libPods-Droncon-CocoaAsyncSocket.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		19B298260A14512D901DD87E /* Pods-Droncon */ = {
+		68C6E4907FF4BEC920D63669 /* Pods-Droncon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D39DD9D045EFD0F1872C08FB /* Build configuration list for PBXNativeTarget "Pods-Droncon" */;
+			buildConfigurationList = F0674AC641A1D2E63D6BC043 /* Build configuration list for PBXNativeTarget "Pods-Droncon" */;
 			buildPhases = (
-				1040B33AE0499262F9D524CA /* Sources */,
-				9BED05B10C3F4A7B5A2BEDB3 /* Frameworks */,
+				91E3E46A08514B606A192AC7 /* Sources */,
+				912FA16CF2BF0E1D7D878877 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFAE851F363E0E0A0FB395E9 /* PBXTargetDependency */,
-				489C748AF709B31ACB27ACF0 /* PBXTargetDependency */,
+				742FD4911466CA6B6A6B01F6 /* PBXTargetDependency */,
+				177D651BE5D748E5293C492B /* PBXTargetDependency */,
+				EDEB2A48FF2E8C869463D7A8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Droncon";
 			productName = "Pods-Droncon";
-			productReference = 2B62C30562CCB0A50FE2969E /* libPods-Droncon.a */;
+			productReference = 6ABAB9964D0AD3AD0BB21462 /* libPods-Droncon.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		EE0111A10088FC8BEB103019 /* Pods-Droncon-RCDraggableButton */ = {
+		9CA98CE005FC65B78A730A73 /* Pods-Droncon-RCDraggableButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DFA8AB5A26C8C64AEFCDFC6 /* Build configuration list for PBXNativeTarget "Pods-Droncon-RCDraggableButton" */;
+			buildConfigurationList = 9727B1AD89762751E2312A60 /* Build configuration list for PBXNativeTarget "Pods-Droncon-RCDraggableButton" */;
 			buildPhases = (
-				D39BE8370D04F0EA19528297 /* Sources */,
-				38CC34B8EB0A49AF5972C076 /* Frameworks */,
-				3518C941B3D6A06A69FB4B02 /* Headers */,
+				5B2910018E2104A86773A180 /* Sources */,
+				AD86911DAB90554465184C58 /* Frameworks */,
+				B20CD275ADCF0A3E52F2354C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -304,85 +370,249 @@
 			);
 			name = "Pods-Droncon-RCDraggableButton";
 			productName = "Pods-Droncon-RCDraggableButton";
-			productReference = A32069DF7811A48E6615939C /* libPods-Droncon-RCDraggableButton.a */;
+			productReference = D6B9C61323BDDDF35B6FE459 /* libPods-Droncon-RCDraggableButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EAF0A470054F29B423B6C899 /* Pods-Droncon-ACEDrawingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11996C2249739C35EDAC82C /* Build configuration list for PBXNativeTarget "Pods-Droncon-ACEDrawingView" */;
+			buildPhases = (
+				FD6436F66E3F27E5DE0AC142 /* Sources */,
+				4B6A983905E47C00A26693FD /* Frameworks */,
+				36258A2A9B228C15C776CB21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Droncon-ACEDrawingView";
+			productName = "Pods-Droncon-ACEDrawingView";
+			productReference = 8EF50364DB36299C6618A901 /* libPods-Droncon-ACEDrawingView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F72E1C06633665BCC10F2C86 /* Project object */ = {
+		FFDBF0A92433A87F7C02BB23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 781F2910EC3699D28BB3AD0D /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = BFF9418F13D6B61F29DE25D4 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3C7053A4C932885F84EB6065;
-			productRefGroup = 856253D10C5CEBD7AF96764A /* Products */;
+			mainGroup = A8D427A7239A1B29D121357F;
+			productRefGroup = 5E638EE14F52CAB91923E3AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19B298260A14512D901DD87E /* Pods-Droncon */,
-				04850124326C71AE95E7F3A3 /* Pods-Droncon-CocoaAsyncSocket */,
-				EE0111A10088FC8BEB103019 /* Pods-Droncon-RCDraggableButton */,
+				68C6E4907FF4BEC920D63669 /* Pods-Droncon */,
+				EAF0A470054F29B423B6C899 /* Pods-Droncon-ACEDrawingView */,
+				2F4C0983368880C0D63F45DC /* Pods-Droncon-CocoaAsyncSocket */,
+				9CA98CE005FC65B78A730A73 /* Pods-Droncon-RCDraggableButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1040B33AE0499262F9D524CA /* Sources */ = {
+		02155C64109FA4A1904CD41A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BA860A534C02089CFF6CAE /* Pods-Droncon-dummy.m in Sources */,
+				4A67578C0438F66CE2281077 /* AsyncSocket.m in Sources */,
+				BE693FB63F63B098CC9AEE8D /* AsyncUdpSocket.m in Sources */,
+				BA8583124DA16E3A8BFE9028 /* GCDAsyncSocket.m in Sources */,
+				CF37212DE473A767AF933BCD /* GCDAsyncUdpSocket.m in Sources */,
+				12AA2E1729C7F548F6A3F7C0 /* Pods-Droncon-CocoaAsyncSocket-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78228608334F3CFB959CAC86 /* Sources */ = {
+		5B2910018E2104A86773A180 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63986D926520C68A06327DD /* AsyncSocket.m in Sources */,
-				E6A346EBED161A165FA52DE1 /* AsyncUdpSocket.m in Sources */,
-				8762A40B0105526506A0F354 /* GCDAsyncSocket.m in Sources */,
-				E81F8D5AA72647D0DEA07E5B /* GCDAsyncUdpSocket.m in Sources */,
-				AA2D30F8CDDC63B8EF813E06 /* Pods-Droncon-CocoaAsyncSocket-dummy.m in Sources */,
+				41AB17DCDE6A0D36857FFBE0 /* Pods-Droncon-RCDraggableButton-dummy.m in Sources */,
+				6A1D87D0DF2CEEE9C4B57F04 /* RCDraggableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D39BE8370D04F0EA19528297 /* Sources */ = {
+		91E3E46A08514B606A192AC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E232458BD315CA52D09ACB /* Pods-Droncon-RCDraggableButton-dummy.m in Sources */,
-				DCE84D3F7CA887285B37669D /* RCDraggableButton.m in Sources */,
+				3651E81AE051E323C555EE8F /* Pods-Droncon-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6436F66E3F27E5DE0AC142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160398B511C77FA02FA08F39 /* ACEDrawingTools.m in Sources */,
+				60B0326D45F7399CF6363117 /* ACEDrawingView.m in Sources */,
+				597BE301F0F3845D678B72CE /* Pods-Droncon-ACEDrawingView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		489C748AF709B31ACB27ACF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Droncon-RCDraggableButton";
-			target = EE0111A10088FC8BEB103019 /* Pods-Droncon-RCDraggableButton */;
-			targetProxy = 8F0D0E64F4D0D4479196B2AD /* PBXContainerItemProxy */;
-		};
-		EFAE851F363E0E0A0FB395E9 /* PBXTargetDependency */ = {
+		177D651BE5D748E5293C492B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Droncon-CocoaAsyncSocket";
-			target = 04850124326C71AE95E7F3A3 /* Pods-Droncon-CocoaAsyncSocket */;
-			targetProxy = 869CEA0BB99A7C50D048F178 /* PBXContainerItemProxy */;
+			target = 2F4C0983368880C0D63F45DC /* Pods-Droncon-CocoaAsyncSocket */;
+			targetProxy = 94F1D85509DE5BA6D1E37FB7 /* PBXContainerItemProxy */;
+		};
+		742FD4911466CA6B6A6B01F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Droncon-ACEDrawingView";
+			target = EAF0A470054F29B423B6C899 /* Pods-Droncon-ACEDrawingView */;
+			targetProxy = EFEE5D8149D3488E87C2DCCC /* PBXContainerItemProxy */;
+		};
+		EDEB2A48FF2E8C869463D7A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Droncon-RCDraggableButton";
+			target = 9CA98CE005FC65B78A730A73 /* Pods-Droncon-RCDraggableButton */;
+			targetProxy = D8DA4CE64E695A5B92563E0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03482F09E6D1EC9B91A683F8 /* Debug */ = {
+		0A2BE467C51EBCE23080EBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2832AE74AB6495D277544D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C776E37147A63CC326B341 /* Pods-Droncon-ACEDrawingView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-ACEDrawingView/Pods-Droncon-ACEDrawingView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5DF0374ADB06459F0264D129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C776E37147A63CC326B341 /* Pods-Droncon-ACEDrawingView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-ACEDrawingView/Pods-Droncon-ACEDrawingView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8539002154F7553BF706AAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551474F080A3047774689CE9 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-CocoaAsyncSocket/Pods-Droncon-CocoaAsyncSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		97F245C19C95A2609DDC75C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA6CB7B3CB10C93B80F7965 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-RCDraggableButton/Pods-Droncon-RCDraggableButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B0E0E7395A5F2BF7B8A52BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA6CB7B3CB10C93B80F7965 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-RCDraggableButton/Pods-Droncon-RCDraggableButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B87EC78035C1CA67CD20CBC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB89DCE0B97DFFB8930E5B50 /* Pods-Droncon.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB8663003DE3D9017C2DDEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,20 +644,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		26A69088E6403BF256585475 /* Debug */ = {
+		E871FD66B9888713E3FFF5AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CD523A5B474D213FC5418C0 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */;
+			baseConfigurationReference = 551474F080A3047774689CE9 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-CocoaAsyncSocket/Pods-Droncon-CocoaAsyncSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -437,114 +667,16 @@
 			};
 			name = Debug;
 		};
-		3921697BFC992B61C5B4F3BF /* Debug */ = {
+		EBE1F8503FCE611E363A8C0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE4899758E379F210284B4FA /* Pods-Droncon.debug.xcconfig */;
+			baseConfigurationReference = FF9520B32C423AD5C5A3C69B /* Pods-Droncon.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		56A00FAB1587F16D938BF226 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		758FAE8A84B486DE86F4EAF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488029D1CF275791F8739324 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-RCDraggableButton/Pods-Droncon-RCDraggableButton-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		912E8E76A5800B2804831387 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488029D1CF275791F8739324 /* Pods-Droncon-RCDraggableButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-RCDraggableButton/Pods-Droncon-RCDraggableButton-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DCED891378732D85409EB71B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8330CC685ED3CA891E1BD73C /* Pods-Droncon.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F3979923EEDD9164015D6B84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CD523A5B474D213FC5418C0 /* Pods-Droncon-CocoaAsyncSocket-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Droncon-CocoaAsyncSocket/Pods-Droncon-CocoaAsyncSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -554,43 +686,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D54567C6A2A1A897B834062 /* Build configuration list for PBXNativeTarget "Pods-Droncon-CocoaAsyncSocket" */ = {
+		62D8638A4E2166B17F834191 /* Build configuration list for PBXNativeTarget "Pods-Droncon-CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26A69088E6403BF256585475 /* Debug */,
-				F3979923EEDD9164015D6B84 /* Release */,
+				E871FD66B9888713E3FFF5AD /* Debug */,
+				8539002154F7553BF706AAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		781F2910EC3699D28BB3AD0D /* Build configuration list for PBXProject "Pods" */ = {
+		9727B1AD89762751E2312A60 /* Build configuration list for PBXNativeTarget "Pods-Droncon-RCDraggableButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03482F09E6D1EC9B91A683F8 /* Debug */,
-				56A00FAB1587F16D938BF226 /* Release */,
+				B0E0E7395A5F2BF7B8A52BC9 /* Debug */,
+				97F245C19C95A2609DDC75C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DFA8AB5A26C8C64AEFCDFC6 /* Build configuration list for PBXNativeTarget "Pods-Droncon-RCDraggableButton" */ = {
+		BFF9418F13D6B61F29DE25D4 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				758FAE8A84B486DE86F4EAF2 /* Debug */,
-				912E8E76A5800B2804831387 /* Release */,
+				DB8663003DE3D9017C2DDEFD /* Debug */,
+				0A2BE467C51EBCE23080EBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D39DD9D045EFD0F1872C08FB /* Build configuration list for PBXNativeTarget "Pods-Droncon" */ = {
+		F0674AC641A1D2E63D6BC043 /* Build configuration list for PBXNativeTarget "Pods-Droncon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3921697BFC992B61C5B4F3BF /* Debug */,
-				DCED891378732D85409EB71B /* Release */,
+				B87EC78035C1CA67CD20CBC1 /* Debug */,
+				EBE1F8503FCE611E363A8C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11996C2249739C35EDAC82C /* Build configuration list for PBXNativeTarget "Pods-Droncon-ACEDrawingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF0374ADB06459F0264D129 /* Debug */,
+				2832AE74AB6495D277544D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F72E1C06633665BCC10F2C86 /* Project object */;
+	rootObject = FFDBF0A92433A87F7C02BB23 /* Project object */;
 }

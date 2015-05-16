@@ -7,6 +7,7 @@ inhibit_all_warnings!
 target 'Droncon' do
 pod 'CocoaAsyncSocket', '~> 7.4'
 pod 'RCDraggableButton', '~> 0.1'
+pod 'ACEDrawingView', '~> 1.3'
 end
 
 target 'DronconTests' do

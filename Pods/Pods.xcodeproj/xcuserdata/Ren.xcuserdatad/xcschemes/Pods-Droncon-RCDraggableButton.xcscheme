@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE0111A10088FC8BEB103019"
+               BlueprintIdentifier = "9CA98CE005FC65B78A730A73"
                BuildableName = "libPods-Droncon-RCDraggableButton.a"
                BlueprintName = "Pods-Droncon-RCDraggableButton"
                ReferencedContainer = "container:Pods.xcodeproj">

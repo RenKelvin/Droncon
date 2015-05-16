@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68C6E4907FF4BEC920D63669"
-               BuildableName = "libPods-Droncon.a"
-               BlueprintName = "Pods-Droncon"
+               BlueprintIdentifier = "EAF0A470054F29B423B6C899"
+               BuildableName = "libPods-Droncon-ACEDrawingView.a"
+               BlueprintName = "Pods-Droncon-ACEDrawingView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

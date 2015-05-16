@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -40,7 +40,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-XF-OpG">
-                                <rect key="frame" x="258" y="258" width="84" height="36"/>
+                                <rect key="frame" x="258" y="282" width="84" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Light" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-GK-QqV">
                                         <rect key="frame" x="0.0" y="0.0" width="21" height="36"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-qf-aE8">
-                                <rect key="frame" x="222" y="330" width="156" height="64"/>
+                                <rect key="frame" x="214" y="354" width="172" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Cb-gqB">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
@@ -106,7 +106,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-YM-MAd">
-                                        <rect key="frame" x="92" y="0.0" width="64" height="64"/>
+                                        <rect key="frame" x="108" y="0.0" width="64" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="64" id="Syb-EM-BXF"/>
                                             <constraint firstAttribute="height" constant="64" id="tlz-hW-4dc"/>
@@ -121,7 +121,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="27D-hM-cP0"/>
+                                    <constraint firstAttribute="width" constant="172" id="27D-hM-cP0"/>
                                     <constraint firstItem="7M8-Cb-gqB" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" id="2mH-p6-c3P"/>
                                     <constraint firstItem="ibf-YM-MAd" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" id="C6L-iS-SiO"/>
                                     <constraint firstItem="7M8-Cb-gqB" firstAttribute="leading" secondItem="TaW-qf-aE8" secondAttribute="leading" id="IWG-b2-r4T"/>
@@ -246,7 +246,7 @@
                                     <constraint firstAttribute="trailing" secondItem="GRw-uG-c5a" secondAttribute="trailing" id="ezJ-DE-AM1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
                                 <rect key="frame" x="125" y="556" width="350" height="32"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
@@ -342,10 +342,19 @@
                                     <constraint firstAttribute="bottom" secondItem="9rf-1x-9hU" secondAttribute="bottom" id="wFZ-dQ-lpR"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnB-rR-znO">
+                                <rect key="frame" x="340" y="440" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gwy-F0-Wt8" kind="presentation" id="syX-bB-kbe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="2OY-tr-JFF"/>
-                            <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" constant="24" id="46s-DE-OhW"/>
+                            <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" id="46s-DE-OhW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" id="6C2-uJ-bBu"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="mJ4-bR-LFx" secondAttribute="trailing" constant="-214" id="71I-Ni-BP4"/>
                             <constraint firstItem="Pwn-XF-OpG" firstAttribute="top" secondItem="mPS-4D-NGt" secondAttribute="bottom" constant="32" id="9hd-Ve-JOA"/>
@@ -356,6 +365,8 @@
                             <constraint firstItem="imj-9V-J9s" firstAttribute="leading" secondItem="NOm-cz-kzH" secondAttribute="trailing" constant="-214" id="DfD-ao-G02"/>
                             <constraint firstAttribute="centerX" secondItem="mPS-4D-NGt" secondAttribute="centerX" id="HUQ-nv-uem"/>
                             <constraint firstItem="mPS-4D-NGt" firstAttribute="top" secondItem="k0U-HB-I8e" secondAttribute="bottom" constant="8" id="JKQ-cO-Be5"/>
+                            <constraint firstItem="MnB-rR-znO" firstAttribute="trailing" secondItem="TaW-qf-aE8" secondAttribute="trailing" id="O49-eC-68x"/>
+                            <constraint firstItem="MnB-rR-znO" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" constant="86" id="QuR-Lq-Pk8"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RS3-gd-xuD"/>
                             <constraint firstItem="imj-9V-J9s" firstAttribute="centerY" secondItem="NOm-cz-kzH" secondAttribute="centerY" constant="-8" id="Sif-fD-GLB"/>
                             <constraint firstItem="TaW-qf-aE8" firstAttribute="top" secondItem="Pwn-XF-OpG" secondAttribute="bottom" constant="36" id="TZa-qy-VkQ"/>
@@ -384,6 +395,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="flyModeButton1" destination="69a-hB-V30" id="oad-M4-beo"/>
                         <outlet property="flyModeButton2" destination="XW8-0j-0YH" id="oNp-2A-nhW"/>
@@ -397,6 +409,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Plan View Controller-->
+        <scene sceneID="Kdw-Pa-a1B">
+            <objects>
+                <viewController id="gwy-F0-Wt8" customClass="PlanViewController" customModule="Droncon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TKV-u2-jry"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTD-hZ-wDx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44g-ed-lK5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-ax-lLV" customClass="ACEDrawingView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuJ-Yo-Qqf">
+                                <rect key="frame" x="554" y="54" width="30" height="30"/>
+                                <state key="normal" title="重绘">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsF-Vw-xUw">
+                                <rect key="frame" x="554" y="16" width="30" height="30"/>
+                                <state key="normal" title="完成">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneTapped:" destination="gwy-F0-Wt8" eventType="touchUpInside" id="56g-F5-go1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KuJ-Yo-Qqf" secondAttribute="trailing" constant="16" id="1so-RF-Zjm"/>
+                            <constraint firstAttribute="trailing" secondItem="OcD-ax-lLV" secondAttribute="trailing" id="FWG-fY-Ch4"/>
+                            <constraint firstItem="OcD-ax-lLV" firstAttribute="leading" secondItem="44g-ed-lK5" secondAttribute="leading" id="MG0-pc-nZg"/>
+                            <constraint firstAttribute="trailing" secondItem="YsF-Vw-xUw" secondAttribute="trailing" constant="16" id="RfH-TS-pGL"/>
+                            <constraint firstItem="HTD-hZ-wDx" firstAttribute="top" secondItem="OcD-ax-lLV" secondAttribute="bottom" id="dFH-3c-p1A"/>
+                            <constraint firstItem="KuJ-Yo-Qqf" firstAttribute="top" secondItem="YsF-Vw-xUw" secondAttribute="bottom" constant="8" id="ftU-2y-quk"/>
+                            <constraint firstItem="OcD-ax-lLV" firstAttribute="top" secondItem="TKV-u2-jry" secondAttribute="bottom" id="lqO-k4-ppk"/>
+                            <constraint firstItem="YsF-Vw-xUw" firstAttribute="top" secondItem="TKV-u2-jry" secondAttribute="bottom" constant="16" id="qVg-5R-rRy"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYz-vR-FTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="345"/>
         </scene>
     </scenes>
     <resources>

@@ -1,13 +1,16 @@
 PODS:
+  - ACEDrawingView (1.3.2)
   - CocoaAsyncSocket (7.4.1)
   - RCDraggableButton (0.4)
 
 DEPENDENCIES:
+  - ACEDrawingView (~> 1.3)
   - CocoaAsyncSocket (~> 7.4)
   - RCDraggableButton (~> 0.1)
 
 SPEC CHECKSUMS:
+  ACEDrawingView: c16c424ab5cdafeb0952bd39b808007a69a960bd
   CocoaAsyncSocket: 7cbf214b27f8e7f7574db6a3fd96352ffaed433d
   RCDraggableButton: 3f4e0adc4dca8614b0f9689c6d441f68601a5ce6
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.37.1

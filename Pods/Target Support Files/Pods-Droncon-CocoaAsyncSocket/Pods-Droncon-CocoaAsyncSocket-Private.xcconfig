@@ -1,6 +1,6 @@
 #include "Pods-Droncon-CocoaAsyncSocket.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public/RCDraggableButton"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ACEDrawingView" "${PODS_ROOT}/Headers/Public/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public/RCDraggableButton"
 OTHER_LDFLAGS = ${PODS_DRONCON_COCOAASYNCSOCKET_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES
