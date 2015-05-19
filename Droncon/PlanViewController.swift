@@ -12,6 +12,9 @@ class PlanViewController: UIViewController, ACEDrawingViewDelegate {
 
     @IBOutlet var canvas: ACEDrawingView!
 
+    @IBOutlet var modeButton1: UIButton!
+    @IBOutlet var modeButton2: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +38,18 @@ class PlanViewController: UIViewController, ACEDrawingViewDelegate {
         self.canvas.clear()
     }
 
+    @IBAction func planTapped(sender: UIButton) {
+        self.canvas.drawTool = ACEDrawingToolTypePen
+        modeButton1.selected = true
+        modeButton2.selected = false
+    }
+
+    @IBAction func fencingTapped(sender: UIButton) {
+        self.canvas.drawTool = ACEDrawingToolTypeRectagleStroke
+        modeButton1.selected = false
+        modeButton2.selected = true
+    }
+
     /*
     // MARK: - Navigation
 
@@ -52,7 +67,7 @@ class PlanViewController: UIViewController, ACEDrawingViewDelegate {
     }
 
     func drawingView(view: ACEDrawingView, didEndDrawUsingTool tool: ACEDrawingTool) {
-
+        
     }
     
 }

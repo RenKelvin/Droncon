@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -20,16 +20,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="NOm-cz-kzH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retruning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-HB-I8e">
-                                <rect key="frame" x="246" y="36" width="109" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="准备起飞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-HB-I8e">
+                                <rect key="frame" x="252.5" y="48" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, back in 3 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
-                                <rect key="frame" x="172" y="74" width="256" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, 自检完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
+                                <rect key="frame" x="172" y="86" width="256" height="15.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="1Mm-r0-ONj"/>
                                 </constraints>
@@ -383,7 +383,7 @@
                             <constraint firstItem="MnB-rR-znO" firstAttribute="centerX" secondItem="TaW-qf-aE8" secondAttribute="centerX" id="sTc-aE-UuD"/>
                             <constraint firstAttribute="centerX" secondItem="k0U-HB-I8e" secondAttribute="centerX" id="vd0-jn-sfl"/>
                             <constraint firstItem="y40-0C-LUE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" constant="-119" id="ygH-32-PcA"/>
-                            <constraint firstItem="k0U-HB-I8e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="zSB-6n-Jf5"/>
+                            <constraint firstItem="k0U-HB-I8e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="zSB-6n-Jf5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -461,15 +461,67 @@
                                             <action selector="clearTapped:" destination="gwy-F0-Wt8" eventType="touchUpInside" id="G1B-Op-C3U"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtF-ws-OaF">
+                                        <rect key="frame" x="16" y="552" width="140" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-ho-sec">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="Qtz-9L-laI"/>
+                                                    <constraint firstAttribute="width" constant="70" id="lT6-ii-CUb"/>
+                                                </constraints>
+                                                <state key="normal" image="Route">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="Route_Selected"/>
+                                                <connections>
+                                                    <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8g8-ab-WN5"/>
+                                                    <action selector="planTapped:" destination="gwy-F0-Wt8" eventType="touchUpInside" id="DkX-Pe-c8o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elk-pg-cCf">
+                                                <rect key="frame" x="70" y="0.0" width="70" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="Bz7-cb-bTY"/>
+                                                    <constraint firstAttribute="width" constant="70" id="h4K-CP-6Tz"/>
+                                                </constraints>
+                                                <state key="normal" image="Fencing">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="Fencing_Selected"/>
+                                                <connections>
+                                                    <action selector="fencingTapped:" destination="gwy-F0-Wt8" eventType="touchUpInside" id="877-Th-faO"/>
+                                                    <action selector="flyModeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHA-SF-ANL"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwithFrame2" translatesAutoresizingMaskIntoConstraints="NO" id="ifH-vS-Mus">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="32"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="0NW-HX-aKq"/>
+                                            <constraint firstItem="ifH-vS-Mus" firstAttribute="top" secondItem="wtF-ws-OaF" secondAttribute="top" id="4uM-Le-2jn"/>
+                                            <constraint firstItem="elk-pg-cCf" firstAttribute="top" secondItem="wtF-ws-OaF" secondAttribute="top" id="FH5-sB-vcC"/>
+                                            <constraint firstAttribute="bottom" secondItem="ifH-vS-Mus" secondAttribute="bottom" id="HWF-kj-DP9"/>
+                                            <constraint firstAttribute="trailing" secondItem="ifH-vS-Mus" secondAttribute="trailing" id="LbX-AJ-Y2E"/>
+                                            <constraint firstItem="off-ho-sec" firstAttribute="leading" secondItem="wtF-ws-OaF" secondAttribute="leading" id="VKc-8T-Ydc"/>
+                                            <constraint firstAttribute="width" constant="140" id="YEf-xd-bCc"/>
+                                            <constraint firstItem="off-ho-sec" firstAttribute="top" secondItem="wtF-ws-OaF" secondAttribute="top" id="aKJ-RX-C2F"/>
+                                            <constraint firstItem="ifH-vS-Mus" firstAttribute="leading" secondItem="wtF-ws-OaF" secondAttribute="leading" id="b29-QZ-tLW"/>
+                                            <constraint firstItem="elk-pg-cCf" firstAttribute="leading" secondItem="off-ho-sec" secondAttribute="trailing" id="qg0-HJ-flc"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Epi-uQ-B8z" secondAttribute="bottom" constant="16" id="1Wu-Ab-yVw"/>
                                     <constraint firstAttribute="centerX" secondItem="q1q-qZ-iyG" secondAttribute="centerX" id="4Qt-78-7Se"/>
+                                    <constraint firstItem="wtF-ws-OaF" firstAttribute="leading" secondItem="OcD-ax-lLV" secondAttribute="leading" constant="16" id="5Cc-sq-ArW"/>
                                     <constraint firstAttribute="trailing" secondItem="Epi-uQ-B8z" secondAttribute="trailing" constant="16" id="aWo-rP-EoA"/>
                                     <constraint firstAttribute="centerY" secondItem="q1q-qZ-iyG" secondAttribute="centerY" id="e8u-ZY-EH0"/>
                                     <constraint firstItem="Epi-uQ-B8z" firstAttribute="leading" secondItem="C9R-3T-RhW" secondAttribute="trailing" constant="8" id="ehl-UU-iAs"/>
                                     <constraint firstItem="C9R-3T-RhW" firstAttribute="centerY" secondItem="Epi-uQ-B8z" secondAttribute="centerY" id="vXK-Ix-gIU"/>
+                                    <constraint firstAttribute="bottom" secondItem="wtF-ws-OaF" secondAttribute="bottom" constant="16" id="x5e-kk-RrE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -488,11 +540,13 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="canvas" destination="OcD-ax-lLV" id="1vH-za-EOA"/>
+                        <outlet property="modeButton1" destination="off-ho-sec" id="yeD-Zc-zEh"/>
+                        <outlet property="modeButton2" destination="elk-pg-cCf" id="2BD-mc-0zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYz-vR-FTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="345"/>
+            <point key="canvasLocation" x="2252" y="317"/>
         </scene>
     </scenes>
     <resources>
@@ -500,6 +554,8 @@
         <image name="AltHold_Selected" width="70" height="32"/>
         <image name="Background" width="667" height="375"/>
         <image name="BackgroundWithShadow" width="667" height="375"/>
+        <image name="Fencing" width="70" height="32"/>
+        <image name="Fencing_Selected" width="70" height="32"/>
         <image name="Green_Light" width="11" height="11"/>
         <image name="Home" width="64" height="64"/>
         <image name="Land" width="51" height="21"/>
@@ -509,11 +565,14 @@
         <image name="Loiter_Selected" width="70" height="32"/>
         <image name="Plane" width="92" height="95"/>
         <image name="Red_Light" width="11" height="11"/>
+        <image name="Route" width="70" height="32"/>
+        <image name="Route_Selected" width="70" height="32"/>
         <image name="Sports" width="52" height="20"/>
         <image name="Sports_Selected" width="70" height="32"/>
         <image name="Stablize" width="58" height="22"/>
         <image name="Stablize_Selected" width="70" height="32"/>
         <image name="Switch_Frame" width="351" height="33"/>
+        <image name="SwithFrame2" width="141" height="33"/>
         <image name="Takoff" width="64" height="64"/>
         <image name="Throll_Blank" width="17" height="243"/>
         <image name="Throll_Handle" width="39" height="14"/>
