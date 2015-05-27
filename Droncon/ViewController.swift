@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var consoleTitleLabel: UILabel!
+    @IBOutlet var consoleSubtitleLabel: UILabel!
+
+    @IBOutlet var lights: RKIndicatorLight!
+
     @IBOutlet var throllHandleButton: RCDraggableButton!
     @IBOutlet var throllMeterImageView: UIImageView!
 
@@ -48,7 +53,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - IBAction
+    // MARK: -
+
+    func updateConsoleTitle(title: String!) {
+        self.consoleTitleLabel.text = title
+    }
+
+    func updateConsoleSubitle(subtitle: String!) {
+        self.consoleSubtitleLabel.text = subtitle
+    }
+
+    // MARK: - IBAction Start
+
+    @IBAction func lockButtonTapped(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
+
+    @IBAction func homeButtonTapped(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
+
+    // MARK: - IBAction Control
 
     @IBAction func yawLeftButtonTapped(sender: UIButton) {
 
@@ -58,13 +83,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func lockButtonTapped(sender: UIButton) {
-        sender.selected = !sender.selected
-    }
-
-    @IBAction func homeButtonTapped(sender: UIButton) {
-        sender.selected = !sender.selected
-    }
+    // MARK: - IBAction Fly Mode
 
     @IBAction func flyModeButtonTapped(sender: UIButton) {
         flyModeButton1.selected = false

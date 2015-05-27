@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94F0FCBEFC57350E863119D0 /* libPods-Droncon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D91374BAD2CD5F29BD2846 /* libPods-Droncon.a */; };
+		A52F5A9D1B15B2620099C88C /* RKIndicatorLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F5A9C1B15B2620099C88C /* RKIndicatorLight.swift */; };
 		A54B558D1B077C400096570D /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B558C1B077C400096570D /* PlanViewController.swift */; };
 		A5EB66D41AF9CA4F002CB83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66D31AF9CA4F002CB83C /* AppDelegate.swift */; };
 		A5EB66D61AF9CA4F002CB83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66D51AF9CA4F002CB83C /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droncon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Droncon/Pods-Droncon.debug.xcconfig"; sourceTree = "<group>"; };
+		A52F5A9C1B15B2620099C88C /* RKIndicatorLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKIndicatorLight.swift; sourceTree = "<group>"; };
 		A54B558C1B077C400096570D /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		A5EB66CE1AF9CA4F002CB83C /* Droncon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droncon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB66D21AF9CA4F002CB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				A5EB66D51AF9CA4F002CB83C /* ViewController.swift */,
 				A54B558C1B077C400096570D /* PlanViewController.swift */,
 				A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */,
+				A52F5A9C1B15B2620099C88C /* RKIndicatorLight.swift */,
 				A5EB66D71AF9CA4F002CB83C /* Main.storyboard */,
 				A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */,
 				A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5FA6D711AF9FDDA0050FA12 /* SocketAdapter.swift in Sources */,
+				A52F5A9D1B15B2620099C88C /* RKIndicatorLight.swift in Sources */,
 				A54B558D1B077C400096570D /* PlanViewController.swift in Sources */,
 				A5EB66D61AF9CA4F002CB83C /* ViewController.swift in Sources */,
 				A5FA6D781AF9FE080050FA12 /* JSONKit.m in Sources */,

@@ -20,15 +20,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="NOm-cz-kzH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="准备起飞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-HB-I8e">
-                                <rect key="frame" x="252.5" y="48" width="97" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凌宇智控科技" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-HB-I8e">
+                                <rect key="frame" x="227.5" y="48" width="145" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, 自检完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, 自检完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
                                 <rect key="frame" x="172" y="86" width="256" height="15.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="1Mm-r0-ONj"/>
@@ -39,7 +39,7 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-XF-OpG">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-XF-OpG" customClass="RKIndicatorLight" customModule="Droncon" customModuleProvider="target">
                                 <rect key="frame" x="258" y="282" width="84" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Light" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-GK-QqV">
@@ -401,11 +401,14 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="consoleSubtitleLabel" destination="mPS-4D-NGt" id="2kV-DO-eGd"/>
+                        <outlet property="consoleTitleLabel" destination="k0U-HB-I8e" id="Ing-Tv-SpD"/>
                         <outlet property="flyModeButton1" destination="69a-hB-V30" id="oad-M4-beo"/>
                         <outlet property="flyModeButton2" destination="XW8-0j-0YH" id="oNp-2A-nhW"/>
                         <outlet property="flyModeButton3" destination="fny-BL-QtP" id="UN9-2N-FUX"/>
                         <outlet property="flyModeButton4" destination="WId-8t-Bgx" id="oEy-6m-FbG"/>
                         <outlet property="flyModeButton5" destination="SFC-uK-wbX" id="euy-7w-qrv"/>
+                        <outlet property="lights" destination="Pwn-XF-OpG" id="6nd-Ll-tei"/>
                         <outlet property="throllHandleButton" destination="euA-BE-5sM" id="Jv5-m5-3Z0"/>
                         <outlet property="throllMeterImageView" destination="myf-HN-rea" id="40Y-LG-mWG"/>
                         <outlet property="wheelHandleButton" destination="ZQZ-LI-bBm" id="Yeg-dF-TES"/>
