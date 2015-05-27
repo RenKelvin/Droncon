@@ -33,22 +33,40 @@ class SocketAdapter: NSObject {
 
     var fm: Int = 0
 
-    var cmd: Int = 0
-
     // MARK: - AsyncSocket Main
 
-    func connect() {
+    func connect() -> Bool {
         self.socket.setDelegate(self)
 
         var error: NSErrorPointer = NSErrorPointer()
         socket.connectToHost("192.168.1.200", onPort: 8002, error: error)
         NSLog("Socket connect error: " + error.debugDescription)
+
+        return true
     }
 
-    func send() {
-        let array = NSArray(objects: ch1, ch2, ch3, ch4, fm ,cmd)
+    func send() -> Bool {
+        let array = NSArray(objects: ch1, ch2, ch3, ch4, fm)
         self.socket.writeData(array.JSONData(), withTimeout: 10.0, tag: 0)
         NSLog(array.JSONString())
+
+        return true
+    }
+
+    func sendF(f: Float) -> Bool {
+        let array = NSArray(objects: f)
+        self.socket.writeData(array.JSONData(), withTimeout: 10.0, tag: 0)
+        NSLog(array.JSONString())
+
+        return true
+    }
+
+    func sendC(c: String) -> Bool {
+        let array = NSArray(objects: c)
+        self.socket.writeData(array.JSONData(), withTimeout: 10.0, tag: 0)
+        NSLog(array.JSONString())
+
+        return true
     }
     
     // MARK: - AsyncSocket Delegate

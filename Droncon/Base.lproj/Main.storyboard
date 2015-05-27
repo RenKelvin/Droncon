@@ -28,7 +28,7 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, 自检完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stablize mode, 自检完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-4D-NGt">
                                 <rect key="frame" x="172" y="86" width="256" height="15.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="1Mm-r0-ONj"/>
@@ -40,7 +40,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-XF-OpG" customClass="RKIndicatorLight" customModule="Droncon" customModuleProvider="target">
-                                <rect key="frame" x="258" y="282" width="84" height="36"/>
+                                <rect key="frame" x="258" y="246" width="84" height="36"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Light" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-GK-QqV">
                                         <rect key="frame" x="0.0" y="0.0" width="21" height="36"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-qf-aE8">
-                                <rect key="frame" x="214" y="354" width="172" height="64"/>
+                                <rect key="frame" x="214" y="318" width="172" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Cb-gqB">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
@@ -97,12 +97,12 @@
                                             <constraint firstAttribute="width" constant="64" id="5Db-43-Rso"/>
                                             <constraint firstAttribute="height" constant="64" id="OqB-SH-Qhg"/>
                                         </constraints>
-                                        <state key="normal" image="Unlock">
+                                        <state key="normal" image="Link">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="Lock"/>
+                                        <state key="selected" image="Unlink"/>
                                         <connections>
-                                            <action selector="lockButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEX-qb-etf"/>
+                                            <action selector="linkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMG-Di-X5r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-YM-MAd">
@@ -114,7 +114,7 @@
                                         <state key="normal" image="Takoff">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="Home"/>
+                                        <state key="selected" image="Takon"/>
                                         <connections>
                                             <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whn-qB-hHJ"/>
                                         </connections>
@@ -246,8 +246,8 @@
                                     <constraint firstAttribute="trailing" secondItem="GRw-uG-c5a" secondAttribute="trailing" id="ezJ-DE-AM1"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
-                                <rect key="frame" x="125" y="556" width="350" height="32"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
+                                <rect key="frame" x="195" y="556" width="210" height="32"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
@@ -320,7 +320,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Switch_Frame" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-1x-9hU">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -338,16 +338,15 @@
                                     <constraint firstItem="XW8-0j-0YH" firstAttribute="leading" secondItem="69a-hB-V30" secondAttribute="trailing" id="lnq-T1-SEb"/>
                                     <constraint firstItem="WId-8t-Bgx" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="top" id="olB-pl-jh4"/>
                                     <constraint firstItem="fny-BL-QtP" firstAttribute="leading" secondItem="XW8-0j-0YH" secondAttribute="trailing" id="pn2-Qc-qoL"/>
-                                    <constraint firstAttribute="width" constant="350" id="qi5-zR-rRb"/>
+                                    <constraint firstAttribute="width" constant="210" id="qi5-zR-rRb"/>
                                     <constraint firstAttribute="bottom" secondItem="9rf-1x-9hU" secondAttribute="bottom" id="wFZ-dQ-lpR"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnB-rR-znO">
-                                <rect key="frame" x="276" y="426" width="48" height="27"/>
+                                <rect key="frame" x="276" y="390" width="48" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="绘制路径">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="gwy-F0-Wt8" kind="presentation" id="syX-bB-kbe"/>
@@ -356,7 +355,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="2OY-tr-JFF"/>
-                            <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" id="46s-DE-OhW"/>
+                            <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" constant="36" id="46s-DE-OhW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" id="6C2-uJ-bBu"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="mJ4-bR-LFx" secondAttribute="trailing" constant="-214" id="71I-Ni-BP4"/>
                             <constraint firstItem="Pwn-XF-OpG" firstAttribute="top" secondItem="mPS-4D-NGt" secondAttribute="bottom" constant="32" id="9hd-Ve-JOA"/>
@@ -560,10 +559,9 @@
         <image name="Fencing" width="70" height="32"/>
         <image name="Fencing_Selected" width="70" height="32"/>
         <image name="Green_Light" width="11" height="11"/>
-        <image name="Home" width="64" height="64"/>
         <image name="Land" width="51" height="21"/>
         <image name="Land_Selected" width="70" height="32"/>
-        <image name="Lock" width="64" height="64"/>
+        <image name="Link" width="64" height="64"/>
         <image name="Loiter" width="51" height="20"/>
         <image name="Loiter_Selected" width="70" height="32"/>
         <image name="Plane" width="92" height="95"/>
@@ -574,13 +572,14 @@
         <image name="Sports_Selected" width="70" height="32"/>
         <image name="Stablize" width="58" height="22"/>
         <image name="Stablize_Selected" width="70" height="32"/>
-        <image name="Switch_Frame" width="351" height="33"/>
+        <image name="Switch_Frame" width="211" height="33"/>
         <image name="SwithFrame2" width="141" height="33"/>
         <image name="Takoff" width="64" height="64"/>
+        <image name="Takon" width="64" height="64"/>
         <image name="Throll_Blank" width="17" height="243"/>
         <image name="Throll_Handle" width="39" height="14"/>
         <image name="Throll_Meter" width="6" height="91"/>
-        <image name="Unlock" width="64" height="64"/>
+        <image name="Unlink" width="64" height="64"/>
         <image name="Wheel_Blank" width="198" height="198"/>
         <image name="Wheel_Handle" width="60" height="60"/>
         <image name="Yaw_Left" width="37" height="59"/>
