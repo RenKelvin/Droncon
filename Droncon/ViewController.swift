@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        lights.turnRed()
+
         // Init view controls
         let throllHandleButtonY0 = throllHandleButton.frame.origin.y
         let throllHandleButtonS0 = throllHandleButton.superview!.frame.height
@@ -53,7 +55,7 @@ class ViewController: UIViewController {
         self.wheelHandleButton.dragEndedBlock = { (button: RCDraggableButton!) -> Void in
             let dx = button.center.x - button.dockPoint.x
             let dy = button.center.y - button.dockPoint.y
-            NSLog("%f, %f, %f, %f, %f, %f", button.center.x, button.center.y, button.dockPoint.x, button.dockPoint.y, dx, dy)
+            // NSLog("%f, %f, %f, %f, %f, %f", button.center.x, button.center.y, button.dockPoint.x, button.dockPoint.y, dx, dy)
 
             if (dx*dx >= dy*dy) {
                 if (dx >= 0) {
@@ -91,12 +93,37 @@ class ViewController: UIViewController {
 
     // MARK: - IBAction Start
 
-    @IBAction func linkButtonTapped(sender: UIButton) {
+    @IBAction func lockButtonTapped(sender: UIButton) {
+        if (!sender.selected) {
+            SocketAdapter.sharedInstance.sendC("A")
+        }
+        else {
+            SocketAdapter.sharedInstance.sendC("S")
+        }
+
         sender.selected = !sender.selected
     }
 
-    @IBAction func homeButtonTapped(sender: UIButton) {
+    @IBAction func autoButtonTapped(sender: UIButton) {
+        if (!sender.selected) {
+            SocketAdapter.sharedInstance.sendC("G")
+        }
+        else {
+            SocketAdapter.sharedInstance.sendC("B")
+        }
+
         sender.selected = !sender.selected
+    }
+
+    @IBAction func linkButtonTapped(sender: UIButton) {
+        if (!sender.selected) {
+            SocketAdapter.sharedInstance.connect()
+        }
+        else {
+            SocketAdapter.sharedInstance.disconnect()
+        }
+
+     sender.selected = !sender.selected
     }
 
     // MARK: - IBAction Control

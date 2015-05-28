@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凌宇智控科技" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-HB-I8e">
-                                <rect key="frame" x="227.5" y="48" width="145" height="30"/>
+                                <rect key="frame" x="227" y="48" width="145" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,6 +87,12 @@
                                     <constraint firstItem="cOF-GK-QqV" firstAttribute="leading" secondItem="Pwn-XF-OpG" secondAttribute="leading" id="u9q-kL-Azd"/>
                                     <constraint firstItem="cOF-GK-QqV" firstAttribute="width" secondItem="RTg-RP-ijy" secondAttribute="width" id="xcg-eU-zr8"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="l1" destination="cOF-GK-QqV" id="0q7-UG-V8I"/>
+                                    <outlet property="l2" destination="RTg-RP-ijy" id="nf0-Eo-G8w"/>
+                                    <outlet property="l3" destination="Uhp-3H-noH" id="UCH-wk-RDs"/>
+                                    <outlet property="l4" destination="BZu-gR-kXA" id="ivP-KH-kC2"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-qf-aE8">
                                 <rect key="frame" x="214" y="318" width="172" height="64"/>
@@ -97,12 +103,12 @@
                                             <constraint firstAttribute="width" constant="64" id="5Db-43-Rso"/>
                                             <constraint firstAttribute="height" constant="64" id="OqB-SH-Qhg"/>
                                         </constraints>
-                                        <state key="normal" image="Link">
+                                        <state key="normal" image="Unlock">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="Unlink"/>
+                                        <state key="selected" image="Lock"/>
                                         <connections>
-                                            <action selector="linkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMG-Di-X5r"/>
+                                            <action selector="lockButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0k-Hx-9lJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-YM-MAd">
@@ -111,12 +117,12 @@
                                             <constraint firstAttribute="width" constant="64" id="Syb-EM-BXF"/>
                                             <constraint firstAttribute="height" constant="64" id="tlz-hW-4dc"/>
                                         </constraints>
-                                        <state key="normal" image="Takoff">
+                                        <state key="normal" image="Auto">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="Takon"/>
+                                        <state key="selected" image="Disauto"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whn-qB-hHJ"/>
+                                            <action selector="autoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROJ-FE-QJg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -247,7 +253,7 @@
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y40-0C-LUE">
-                                <rect key="frame" x="195" y="556" width="210" height="32"/>
+                                <rect key="frame" x="195" y="544" width="210" height="32"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-hB-V30">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
@@ -342,7 +348,7 @@
                                     <constraint firstAttribute="bottom" secondItem="9rf-1x-9hU" secondAttribute="bottom" id="wFZ-dQ-lpR"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnB-rR-znO">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnB-rR-znO">
                                 <rect key="frame" x="276" y="390" width="48" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="绘制路径">
@@ -352,19 +358,31 @@
                                     <segue destination="gwy-F0-Wt8" kind="presentation" id="syX-bB-kbe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q25-iG-x5d">
+                                <rect key="frame" x="560" y="8" width="32" height="32"/>
+                                <state key="normal" image="Connect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="Disconnect"/>
+                                <connections>
+                                    <action selector="linkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3Q-PI-sAO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Pwn-XF-OpG" firstAttribute="leading" secondItem="Q25-iG-x5d" secondAttribute="trailing" constant="-62" id="19R-Pp-Kpz"/>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="2OY-tr-JFF"/>
                             <constraint firstAttribute="centerY" secondItem="Pwn-XF-OpG" secondAttribute="centerY" constant="36" id="46s-DE-OhW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" id="6C2-uJ-bBu"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="mJ4-bR-LFx" secondAttribute="trailing" constant="-214" id="71I-Ni-BP4"/>
                             <constraint firstItem="Pwn-XF-OpG" firstAttribute="top" secondItem="mPS-4D-NGt" secondAttribute="bottom" constant="32" id="9hd-Ve-JOA"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="bottom" id="9sw-En-YnK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="bottom" constant="12" id="A8H-VB-Q7w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y40-0C-LUE" secondAttribute="bottom" constant="24" id="A8H-VB-Q7w"/>
                             <constraint firstAttribute="centerX" secondItem="Pwn-XF-OpG" secondAttribute="centerX" id="AaD-J1-zjw"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aie-R5-Bse"/>
                             <constraint firstItem="imj-9V-J9s" firstAttribute="leading" secondItem="NOm-cz-kzH" secondAttribute="trailing" constant="-214" id="DfD-ao-G02"/>
                             <constraint firstAttribute="centerX" secondItem="mPS-4D-NGt" secondAttribute="centerX" id="HUQ-nv-uem"/>
+                            <constraint firstAttribute="centerX" secondItem="Q25-iG-x5d" secondAttribute="centerX" id="I0o-Gx-c1N"/>
                             <constraint firstItem="mPS-4D-NGt" firstAttribute="top" secondItem="k0U-HB-I8e" secondAttribute="bottom" constant="8" id="JKQ-cO-Be5"/>
                             <constraint firstItem="MnB-rR-znO" firstAttribute="trailing" secondItem="TaW-qf-aE8" secondAttribute="trailing" id="O49-eC-68x"/>
                             <constraint firstItem="MnB-rR-znO" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" constant="72" id="QuR-Lq-Pk8"/>
@@ -372,14 +390,19 @@
                             <constraint firstItem="imj-9V-J9s" firstAttribute="centerY" secondItem="NOm-cz-kzH" secondAttribute="centerY" constant="-8" id="Sif-fD-GLB"/>
                             <constraint firstItem="TaW-qf-aE8" firstAttribute="top" secondItem="Pwn-XF-OpG" secondAttribute="bottom" constant="36" id="TZa-qy-VkQ"/>
                             <constraint firstAttribute="trailing" secondItem="NOm-cz-kzH" secondAttribute="trailing" id="U0I-3z-Oef"/>
+                            <constraint firstAttribute="trailing" secondItem="Q25-iG-x5d" secondAttribute="trailing" constant="8" id="VcF-Wk-QeY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q25-iG-x5d" secondAttribute="bottom" constant="8" id="W2q-77-3RL"/>
                             <constraint firstItem="mJ4-bR-LFx" firstAttribute="centerY" secondItem="NOm-cz-kzH" secondAttribute="centerY" constant="-8" id="bKU-zJ-UL5"/>
+                            <constraint firstAttribute="trailing" secondItem="Q25-iG-x5d" secondAttribute="trailing" constant="8" id="dX8-cM-YGv"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eYr-YH-uSk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" id="ebe-dw-ocj"/>
                             <constraint firstAttribute="centerX" secondItem="TaW-qf-aE8" secondAttribute="centerX" id="gIT-9X-dhQ"/>
+                            <constraint firstItem="Q25-iG-x5d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="iC3-En-fek"/>
                             <constraint firstAttribute="trailing" secondItem="imj-9V-J9s" secondAttribute="trailing" constant="16" id="kUr-cM-NMk"/>
                             <constraint firstItem="NOm-cz-kzH" firstAttribute="centerX" secondItem="y40-0C-LUE" secondAttribute="centerX" id="oUy-FX-gsF"/>
                             <constraint firstItem="mJ4-bR-LFx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="oyk-FK-p8D"/>
                             <constraint firstItem="MnB-rR-znO" firstAttribute="centerX" secondItem="TaW-qf-aE8" secondAttribute="centerX" id="sTc-aE-UuD"/>
+                            <constraint firstItem="Q25-iG-x5d" firstAttribute="top" secondItem="Pwn-XF-OpG" secondAttribute="bottom" constant="122" id="tsR-3i-pVg"/>
                             <constraint firstAttribute="centerX" secondItem="k0U-HB-I8e" secondAttribute="centerX" id="vd0-jn-sfl"/>
                             <constraint firstItem="y40-0C-LUE" firstAttribute="top" secondItem="NOm-cz-kzH" secondAttribute="bottom" constant="-119" id="ygH-32-PcA"/>
                             <constraint firstItem="k0U-HB-I8e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="zSB-6n-Jf5"/>
@@ -390,10 +413,15 @@
                                 <exclude reference="9sw-En-YnK"/>
                                 <exclude reference="RS3-gd-xuD"/>
                                 <exclude reference="U0I-3z-Oef"/>
+                                <exclude reference="19R-Pp-Kpz"/>
                                 <exclude reference="9hd-Ve-JOA"/>
                                 <exclude reference="DfD-ao-G02"/>
                                 <exclude reference="O49-eC-68x"/>
+                                <exclude reference="I0o-Gx-c1N"/>
+                                <exclude reference="dX8-cM-YGv"/>
+                                <exclude reference="tsR-3i-pVg"/>
                                 <exclude reference="ygH-32-PcA"/>
+                                <exclude reference="W2q-77-3RL"/>
                                 <exclude reference="ebe-dw-ocj"/>
                             </mask>
                         </variation>
@@ -548,20 +576,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYz-vR-FTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2252" y="317"/>
+            <point key="canvasLocation" x="1165" y="345"/>
         </scene>
     </scenes>
     <resources>
         <image name="AltHold" width="56" height="15"/>
         <image name="AltHold_Selected" width="70" height="32"/>
+        <image name="Auto" width="64" height="64"/>
         <image name="Background" width="667" height="375"/>
         <image name="BackgroundWithShadow" width="667" height="375"/>
+        <image name="Connect" width="32" height="32"/>
+        <image name="Disauto" width="64" height="64"/>
+        <image name="Disconnect" width="32" height="32"/>
         <image name="Fencing" width="70" height="32"/>
         <image name="Fencing_Selected" width="70" height="32"/>
         <image name="Green_Light" width="11" height="11"/>
         <image name="Land" width="51" height="21"/>
         <image name="Land_Selected" width="70" height="32"/>
-        <image name="Link" width="64" height="64"/>
+        <image name="Lock" width="64" height="64"/>
         <image name="Loiter" width="51" height="20"/>
         <image name="Loiter_Selected" width="70" height="32"/>
         <image name="Plane" width="92" height="95"/>
@@ -574,12 +606,10 @@
         <image name="Stablize_Selected" width="70" height="32"/>
         <image name="Switch_Frame" width="211" height="33"/>
         <image name="SwithFrame2" width="141" height="33"/>
-        <image name="Takoff" width="64" height="64"/>
-        <image name="Takon" width="64" height="64"/>
         <image name="Throll_Blank" width="17" height="243"/>
         <image name="Throll_Handle" width="39" height="14"/>
         <image name="Throll_Meter" width="6" height="91"/>
-        <image name="Unlink" width="64" height="64"/>
+        <image name="Unlock" width="64" height="64"/>
         <image name="Wheel_Blank" width="198" height="198"/>
         <image name="Wheel_Handle" width="60" height="60"/>
         <image name="Yaw_Left" width="37" height="59"/>

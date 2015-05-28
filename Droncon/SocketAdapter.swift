@@ -33,6 +33,9 @@ class SocketAdapter: NSObject {
 
     var fm: Int = 0
 
+    var connected: Bool = false
+    var auto: Bool = false
+
     // MARK: - AsyncSocket Main
 
     func connect() -> Bool {
@@ -41,6 +44,16 @@ class SocketAdapter: NSObject {
         var error: NSErrorPointer = NSErrorPointer()
         socket.connectToHost("192.168.1.200", onPort: 8002, error: error)
         NSLog("Socket connect error: " + error.debugDescription)
+
+        return true
+    }
+
+    func disconnect() -> Bool {
+        self.socket.setDelegate(self)
+
+        var error: NSErrorPointer = NSErrorPointer()
+        socket.disconnect()
+        NSLog("Socket disconnect error: " + error.debugDescription)
 
         return true
     }
