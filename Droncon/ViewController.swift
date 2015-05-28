@@ -43,7 +43,9 @@ class ViewController: UIViewController {
             let rect1 = self.throllMeterImageView.frame
             let rect2 = CGRectMake(rect1.origin.x, throllMeterImageViewY0+dY, rect1.width, throllMeterImageViewH0-dY)
             self.throllMeterImageView.frame = rect2
-
+        }
+        self.throllHandleButton.dragEndedBlock = { (button: RCDraggableButton!) -> Void in
+            let dY = button.frame.origin.y - throllHandleButtonY0
             let per = Float(1 - (throllMeterImageViewY0+dY)/throllHandleButtonS0)
             SocketAdapter.sharedInstance.sendF(per)
         }
@@ -57,20 +59,40 @@ class ViewController: UIViewController {
             let dy = button.center.y - button.dockPoint.y
             // NSLog("%f, %f, %f, %f, %f, %f", button.center.x, button.center.y, button.dockPoint.x, button.dockPoint.y, dx, dy)
 
-            if (dx*dx >= dy*dy) {
-                if (dx >= 0) {
-                    SocketAdapter.sharedInstance.sendC(".")
+            if (SocketAdapter.sharedInstance.auto) {
+                if (dx*dx >= dy*dy) {
+                    if (dx >= 0) {
+                        SocketAdapter.sharedInstance.sendC(".")
+                    }
+                    else {
+                        SocketAdapter.sharedInstance.sendC(",")
+                    }
                 }
                 else {
-                    SocketAdapter.sharedInstance.sendC(",")
+                    if (dy >= 0) {
+                        SocketAdapter.sharedInstance.sendC("D")
+                    }
+                    else {
+                        SocketAdapter.sharedInstance.sendC("E")
+                    }
                 }
             }
             else {
-                if (dy >= 0) {
-                    SocketAdapter.sharedInstance.sendC("D")
+                if (dx*dx >= dy*dy) {
+                    if (dx >= 0) {
+                        SocketAdapter.sharedInstance.sendC("L")
+                    }
+                    else {
+                        SocketAdapter.sharedInstance.sendC("J")
+                    }
                 }
                 else {
-                    SocketAdapter.sharedInstance.sendC("E")
+                    if (dy >= 0) {
+                        SocketAdapter.sharedInstance.sendC("K")
+                    }
+                    else {
+                        SocketAdapter.sharedInstance.sendC("I")
+                    }
                 }
             }
         }
@@ -102,6 +124,7 @@ class ViewController: UIViewController {
         }
 
         sender.selected = !sender.selected
+        SocketAdapter.sharedInstance.lock = !sender.selected
     }
 
     @IBAction func autoButtonTapped(sender: UIButton) {
@@ -113,6 +136,7 @@ class ViewController: UIViewController {
         }
 
         sender.selected = !sender.selected
+        SocketAdapter.sharedInstance.auto = sender.selected
     }
 
     @IBAction func linkButtonTapped(sender: UIButton) {
@@ -123,7 +147,8 @@ class ViewController: UIViewController {
             SocketAdapter.sharedInstance.disconnect()
         }
 
-     sender.selected = !sender.selected
+        sender.selected = !sender.selected
+        SocketAdapter.sharedInstance.connected = sender.selected
     }
 
     // MARK: - IBAction Control

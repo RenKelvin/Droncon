@@ -34,6 +34,7 @@ class SocketAdapter: NSObject {
     var fm: Int = 0
 
     var connected: Bool = false
+    var lock: Bool = false
     var auto: Bool = false
 
     // MARK: - AsyncSocket Main
@@ -42,7 +43,7 @@ class SocketAdapter: NSObject {
         self.socket.setDelegate(self)
 
         var error: NSErrorPointer = NSErrorPointer()
-        socket.connectToHost("192.168.1.200", onPort: 8002, error: error)
+        socket.connectToHost("192.168.8.185", onPort: 8002, error: error)
         NSLog("Socket connect error: " + error.debugDescription)
 
         return true
