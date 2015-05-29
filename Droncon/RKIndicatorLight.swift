@@ -35,5 +35,12 @@ class RKIndicatorLight: UIView {
         l3.image = UIImage(named: "Green_Light")
         l4.image = UIImage(named: "Green_Light")
     }
-    
+
+    func turnGGYY() {
+        l1.image = UIImage(named: "Green_Light")
+        l2.image = UIImage(named: "Green_Light")
+        l3.image = UIImage(named: "Yellow_Light")
+        l4.image = UIImage(named: "Yellow_Light")
+   }
+
 }

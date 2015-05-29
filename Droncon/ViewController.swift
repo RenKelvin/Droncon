@@ -118,9 +118,11 @@ class ViewController: UIViewController {
     @IBAction func lockButtonTapped(sender: UIButton) {
         if (!sender.selected) {
             SocketAdapter.sharedInstance.sendC("A")
+            lights.turnGreen()
         }
         else {
             SocketAdapter.sharedInstance.sendC("S")
+            lights.turnYellow()
         }
 
         sender.selected = !sender.selected
@@ -130,9 +132,11 @@ class ViewController: UIViewController {
     @IBAction func autoButtonTapped(sender: UIButton) {
         if (!sender.selected) {
             SocketAdapter.sharedInstance.sendC("G")
+            lights.turnGGYY()
         }
         else {
             SocketAdapter.sharedInstance.sendC("B")
+            lights.turnGreen()
         }
 
         sender.selected = !sender.selected
@@ -142,9 +146,11 @@ class ViewController: UIViewController {
     @IBAction func linkButtonTapped(sender: UIButton) {
         if (!sender.selected) {
             SocketAdapter.sharedInstance.connect()
+            lights.turnYellow()
         }
         else {
             SocketAdapter.sharedInstance.disconnect()
+            lights.turnRed()
         }
 
         sender.selected = !sender.selected

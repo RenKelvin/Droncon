@@ -95,7 +95,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaW-qf-aE8">
-                                <rect key="frame" x="214" y="318" width="172" height="64"/>
+                                <rect key="frame" x="222" y="318" width="156" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Cb-gqB">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
@@ -112,7 +112,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-YM-MAd">
-                                        <rect key="frame" x="108" y="0.0" width="64" height="64"/>
+                                        <rect key="frame" x="92" y="0.0" width="64" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="64" id="Syb-EM-BXF"/>
                                             <constraint firstAttribute="height" constant="64" id="tlz-hW-4dc"/>
@@ -127,7 +127,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="172" id="27D-hM-cP0"/>
+                                    <constraint firstAttribute="width" constant="156" id="27D-hM-cP0"/>
                                     <constraint firstItem="7M8-Cb-gqB" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" id="2mH-p6-c3P"/>
                                     <constraint firstItem="ibf-YM-MAd" firstAttribute="top" secondItem="TaW-qf-aE8" secondAttribute="top" id="C6L-iS-SiO"/>
                                     <constraint firstItem="7M8-Cb-gqB" firstAttribute="leading" secondItem="TaW-qf-aE8" secondAttribute="leading" id="IWG-b2-r4T"/>
