@@ -3,21 +3,21 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #include <OpenGLES/ES1/glext.h>
-									 
+
 @interface MyVideoBuffer : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>{
 
-	@public
-	AVCaptureSession*		_session;
+@public
+    AVCaptureSession*		_session;
 
-	CMTime previousTimestamp;
-	
-	Float64 videoFrameRate;
-	CMVideoDimensions videoDimensions;
-	CMVideoCodecType videoType;
-	
-	uint m_textureHandle;
-	unsigned char *bwImage;
-	
+    CMTime previousTimestamp;
+
+    Float64 videoFrameRate;
+    CMVideoDimensions videoDimensions;
+    CMVideoCodecType videoType;
+
+    uint m_textureHandle;
+    unsigned char *bwImage;
+
 }
 
 @property (nonatomic, retain) AVCaptureSession* _session;
@@ -32,7 +32,7 @@
 - (GLuint)	createVideoTextuerUsingWidth:(GLuint)w Height:(GLuint)h;
 - (void)	resetWithSize:(GLuint)w Height:(GLuint)h;
 - (void)	convertToBlackWhite:(unsigned char *) pixels;
-- (void) setGLStuff:(EAGLContext*)c :(GLuint)rb :(GLuint)fb :(GLuint)bw :(GLuint)bh; 
+- (void) setGLStuff:(EAGLContext*)c :(GLuint)rb :(GLuint)fb :(GLuint)bw :(GLuint)bh;
 - (void) render;
 - (IBAction) pressButton;
 

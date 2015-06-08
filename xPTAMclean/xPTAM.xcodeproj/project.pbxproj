@@ -268,17 +268,16 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				282995F019C29914007B32DA /* Default-568h@2x.png */,
-				C2D1713C1237994700AE4C3F /* iPTAM */,
-				080E96DDFE201D6D7F000001 /* Classes */,
 				E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */,
 				E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				C2D1703312378C9F00AE4C3F /* iCVD */,
+				C2D1713C1237994700AE4C3F /* iPTAM */,
 				C2D1709B12378C9F00AE4C3F /* iTooN */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -295,11 +294,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFD7181911AD9B6100C83845 /* iTunesArtwork */,
+				8D1107310486CEB800E47090 /* xPTAM-Info.plist */,
+				282995F019C29914007B32DA /* Default-568h@2x.png */,
 				AFD717FF11AD99FA00C83845 /* Icon-Small.png */,
 				AFD7180011AD99FA00C83845 /* Icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* xPTAM-Info.plist */,
-				AFD7181911AD9B6100C83845 /* iTunesArtwork */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -541,7 +541,7 @@
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 78L6UCY98A;
+						DevelopmentTeam = N9KJV72CSL;
 					};
 				};
 			};
@@ -631,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -650,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
