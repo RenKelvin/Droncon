@@ -5,6 +5,9 @@
       location = "group:Droncon.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:xPTAMclean/xPTAM.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
