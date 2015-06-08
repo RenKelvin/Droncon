@@ -14,20 +14,9 @@
 		A5EB66D61AF9CA4F002CB83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66D51AF9CA4F002CB83C /* ViewController.swift */; };
 		A5EB66D91AF9CA4F002CB83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66D71AF9CA4F002CB83C /* Main.storyboard */; };
 		A5EB66DB1AF9CA4F002CB83C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */; };
-		A5EB66EA1AF9CA50002CB83C /* DronconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB66E91AF9CA50002CB83C /* DronconTests.swift */; };
 		A5FA6D711AF9FDDA0050FA12 /* SocketAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */; };
 		A5FA6D781AF9FE080050FA12 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FA6D771AF9FE080050FA12 /* JSONKit.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A5EB66E41AF9CA50002CB83C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5EB66C61AF9CA4F002CB83C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5EB66CD1AF9CA4F002CB83C;
-			remoteInfo = Droncon;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		82CC0CB015D9F4B4C2497026 /* Pods-Droncon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droncon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Droncon/Pods-Droncon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -39,9 +28,6 @@
 		A5EB66D51AF9CA4F002CB83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5EB66D81AF9CA4F002CB83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A5EB66E31AF9CA50002CB83C /* DronconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DronconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5EB66E81AF9CA50002CB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5EB66E91AF9CA50002CB83C /* DronconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DronconTests.swift; sourceTree = "<group>"; };
 		A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAdapter.swift; sourceTree = "<group>"; };
 		A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Droncon-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5FA6D761AF9FE080050FA12 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -56,13 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F0FCBEFC57350E863119D0 /* libPods-Droncon.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5EB66E01AF9CA50002CB83C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				A5EB66D01AF9CA4F002CB83C /* Droncon */,
-				A5EB66E61AF9CA50002CB83C /* DronconTests */,
 				A5EB66CF1AF9CA4F002CB83C /* Products */,
 				49E276CECC5FF5A5F3097CAA /* Pods */,
 				7E77C4577E2C249DB3A9F728 /* Frameworks */,
@@ -101,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				A5EB66CE1AF9CA4F002CB83C /* Droncon.app */,
-				A5EB66E31AF9CA50002CB83C /* DronconTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,23 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				A5EB66D21AF9CA4F002CB83C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A5EB66E61AF9CA50002CB83C /* DronconTests */ = {
-			isa = PBXGroup;
-			children = (
-				A5EB66E91AF9CA50002CB83C /* DronconTests.swift */,
-				A5EB66E71AF9CA50002CB83C /* Supporting Files */,
-			);
-			path = DronconTests;
-			sourceTree = "<group>";
-		};
-		A5EB66E71AF9CA50002CB83C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A5EB66E81AF9CA50002CB83C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,24 +147,6 @@
 			productReference = A5EB66CE1AF9CA4F002CB83C /* Droncon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A5EB66E21AF9CA50002CB83C /* DronconTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5EB66F01AF9CA50002CB83C /* Build configuration list for PBXNativeTarget "DronconTests" */;
-			buildPhases = (
-				A5EB66DF1AF9CA50002CB83C /* Sources */,
-				A5EB66E01AF9CA50002CB83C /* Frameworks */,
-				A5EB66E11AF9CA50002CB83C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5EB66E51AF9CA50002CB83C /* PBXTargetDependency */,
-			);
-			name = DronconTests;
-			productName = DronconTests;
-			productReference = A5EB66E31AF9CA50002CB83C /* DronconTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,10 +159,6 @@
 					A5EB66CD1AF9CA4F002CB83C = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = N9KJV72CSL;
-					};
-					A5EB66E21AF9CA50002CB83C = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = A5EB66CD1AF9CA4F002CB83C;
 					};
 				};
 			};
@@ -238,7 +176,6 @@
 			projectRoot = "";
 			targets = (
 				A5EB66CD1AF9CA4F002CB83C /* Droncon */,
-				A5EB66E21AF9CA50002CB83C /* DronconTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,13 +187,6 @@
 			files = (
 				A5EB66D91AF9CA4F002CB83C /* Main.storyboard in Resources */,
 				A5EB66DB1AF9CA4F002CB83C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5EB66E11AF9CA50002CB83C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,23 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5EB66DF1AF9CA50002CB83C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5EB66EA1AF9CA50002CB83C /* DronconTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A5EB66E51AF9CA50002CB83C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5EB66CD1AF9CA4F002CB83C /* Droncon */;
-			targetProxy = A5EB66E41AF9CA50002CB83C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5EB66D71AF9CA4F002CB83C /* Main.storyboard */ = {
@@ -455,40 +369,6 @@
 			};
 			name = Release;
 		};
-		A5EB66F11AF9CA50002CB83C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DronconTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Droncon.app/Droncon";
-			};
-			name = Debug;
-		};
-		A5EB66F21AF9CA50002CB83C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DronconTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Droncon.app/Droncon";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,15 +386,6 @@
 			buildConfigurations = (
 				A5EB66EE1AF9CA50002CB83C /* Debug */,
 				A5EB66EF1AF9CA50002CB83C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5EB66F01AF9CA50002CB83C /* Build configuration list for PBXNativeTarget "DronconTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5EB66F11AF9CA50002CB83C /* Debug */,
-				A5EB66F21AF9CA50002CB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
