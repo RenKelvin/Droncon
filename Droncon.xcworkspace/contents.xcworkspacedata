@@ -8,6 +8,9 @@
       location = "group:xPTAMclean/xPTAM.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:mjpeg-iphone-master/MJPEGWithSocket.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

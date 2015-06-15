@@ -79,7 +79,7 @@ class SocketAdapter: NSObject {
         let array = NSArray(objects: c)
         self.socket.writeData(array.JSONData(), withTimeout: 10.0, tag: 0)
         NSLog(array.JSONString())
-
+        
         return true
     }
     
