@@ -7,7 +7,7 @@
 @interface GLVideoFrameAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     EAGLView *glView;
-	IBOutlet UILabel *userString;
+    IBOutlet UILabel *userString;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

@@ -1,2 +1,6 @@
 
 *.xcscheme
+
+*.xcbkptlist
+
+mjpeg-iphone-master/MJPEGWithSocket.xcodeproj/xcuserdata/Ren.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

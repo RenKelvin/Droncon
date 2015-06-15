@@ -276,8 +276,8 @@
 				C2D1713C1237994700AE4C3F /* iPTAM */,
 				C2D1709B12378C9F00AE4C3F /* iTooN */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";

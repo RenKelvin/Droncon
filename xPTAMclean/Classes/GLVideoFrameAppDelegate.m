@@ -11,23 +11,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   // [glView startAnimation];
+    // [glView startAnimation];
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-  //  [glView stopAnimation];
+    //  [glView stopAnimation];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-  //  [glView startAnimation];
+    //  [glView startAnimation];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-   // [glView stopAnimation];
+    // [glView stopAnimation];
 }
 
 - (void)dealloc
