@@ -20,7 +20,7 @@
 
 //The EAGL view is stored in the nib file. When it's unarchived it's sent -initWithCoder:
 - (id)initWithCoder:(NSCoder*)coder
-{    
+{
     if ((self = [super initWithCoder:coder]))
     {
         // Get the layer
@@ -52,7 +52,7 @@
 
 - (void)drawView:(id)sender
 {
-  //  [renderer render];
+    //  [renderer render];
 }
 
 - (void)layoutSubviews
@@ -80,8 +80,8 @@
 
         if (animating)
         {
-           // [self stopAnimation];
-           // [self startAnimation];
+            // [self stopAnimation];
+            // [self startAnimation];
         }
     }
 }
@@ -90,9 +90,9 @@
 {
     if (!animating)
     {
-		displayLink = [NSClassFromString(@"CADisplayLink") displayLinkWithTarget:self selector:@selector(drawView:)];
-		[displayLink setFrameInterval:animationFrameInterval];
-		[displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+        displayLink = [NSClassFromString(@"CADisplayLink") displayLinkWithTarget:self selector:@selector(drawView:)];
+        [displayLink setFrameInterval:animationFrameInterval];
+        [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 
         animating = TRUE;
     }
@@ -102,8 +102,8 @@
 {
     if (animating)
     {
-		[displayLink invalidate];
-		displayLink = nil;
+        [displayLink invalidate];
+        displayLink = nil;
 
         animating = FALSE;
     }
@@ -112,7 +112,7 @@
 - (void)dealloc
 {
     [renderer release];
-
+    
     [super dealloc];
 }
 

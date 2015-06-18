@@ -9,8 +9,8 @@
 // The view content is basically an EAGL surface you render your OpenGL scene into.
 // Note that setting the view non-opaque will only work if the EAGL surface has an alpha channel.
 @interface EAGLView : UIView
-{    
-	
+{
+
 @private
     id <ESRenderer> renderer;
 
@@ -23,7 +23,7 @@
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
- 
+
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
