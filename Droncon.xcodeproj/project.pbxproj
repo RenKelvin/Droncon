@@ -65,6 +65,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A53F97741B327EAD00F5A96B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */,
+				A5EB66D71AF9CA4F002CB83C /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A5EB66C51AF9CA4F002CB83C = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +100,8 @@
 				A54B558C1B077C400096570D /* PlanViewController.swift */,
 				A5FA6D701AF9FDDA0050FA12 /* SocketAdapter.swift */,
 				A52F5A9C1B15B2620099C88C /* RKIndicatorLight.swift */,
-				A5EB66D71AF9CA4F002CB83C /* Main.storyboard */,
-				A5EB66DA1AF9CA4F002CB83C /* Images.xcassets */,
-				A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */,
-				A5FA6D7A1AF9FE1A0050FA12 /* Vendor */,
+				A5FA6D7A1AF9FE1A0050FA12 /* Vendors */,
+				A53F97741B327EAD00F5A96B /* Resources */,
 				A5EB66D11AF9CA4F002CB83C /* Supporting Files */,
 			);
 			path = Droncon;
@@ -103,6 +110,7 @@
 		A5EB66D11AF9CA4F002CB83C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5FA6D721AF9FDEC0050FA12 /* Droncon-Bridging-Header.h */,
 				A5EB66D21AF9CA4F002CB83C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -117,12 +125,12 @@
 			name = JSONKit;
 			sourceTree = "<group>";
 		};
-		A5FA6D7A1AF9FE1A0050FA12 /* Vendor */ = {
+		A5FA6D7A1AF9FE1A0050FA12 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
 				A5FA6D791AF9FE130050FA12 /* JSONKit */,
 			);
-			name = Vendor;
+			name = Vendors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
