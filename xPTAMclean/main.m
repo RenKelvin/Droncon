@@ -50,11 +50,12 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 */
 
 #import <UIKit/UIKit.h>
+#import "GLVideoFrameAppDelegate.h"
 
 int main(int argc, char *argv[]) {
     
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([GLVideoFrameAppDelegate class]));
     [pool release];
     return retVal;
 }

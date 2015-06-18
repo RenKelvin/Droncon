@@ -214,8 +214,8 @@
 		C2D1716A1237994700AE4C3F /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
 		C2D1716B1237994700AE4C3F /* TrackerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerData.h; sourceTree = "<group>"; };
 		C2E07671123B7B9E004F6C08 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVideoBuffer.h; sourceTree = "<group>"; };
-		E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyVideoBuffer.mm; sourceTree = "<group>"; };
+		E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyVideoBuffer.h; path = ../MyVideoBuffer.h; sourceTree = "<group>"; };
+		E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyVideoBuffer.mm; path = ../MyVideoBuffer.mm; sourceTree = "<group>"; };
 		E0D55FFD1198D081006E5CBE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E0D560011198D08C006E5CBE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E0D560071198D096006E5CBE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -245,14 +245,16 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C2B91C6012849431003B77EE /* teapot.h */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
 				2514C26D10084DB100A42282 /* ES1Renderer.h */,
 				2514C26E10084DB100A42282 /* ES1Renderer.m */,
 				2514C27110084DB100A42282 /* ESRenderer.h */,
-				28FD14FC0DC6FC130079059D /* EAGLView.h */,
-				28FD14FD0DC6FC130079059D /* EAGLView.m */,
 				1D3623240D0F684500981E51 /* GLVideoFrameAppDelegate.h */,
 				1D3623250D0F684500981E51 /* GLVideoFrameAppDelegate.m */,
+				E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */,
+				E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */,
+				C2B91C6012849431003B77EE /* teapot.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -268,8 +270,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */,
-				E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				C2D1703312378C9F00AE4C3F /* iCVD */,
